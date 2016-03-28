@@ -1,0 +1,38 @@
+#!/bin/sh /etc/rc.common
+
+START=35
+STOP=85
+
+SERVICE_DAEMONIZE=1
+SERVICE_WRITE_PID=1
+
+start() {
+    echo .....start odhcpd.....
+        /usr/bin/odhcpd&
+        echo .....monitor_process.sh.....
+        /usr/bin/monitor_process.sh&
+}
+
+stop(){
+    result=`pidof monitor_process.sh`
+        echo .....result = [$result].....
+        if [[ -n "$result" ]]
+            then
+                echo .....kill monitor_process.sh process
+                kill -9 $result
+        else
+            echo ....not has process monitor_process.sh need killed
+                fi  
+                result=`pidof odhcpd`
+                echo .....result = [$result].....
+                if [[ -n "$result" ]]
+                    then
+                        echo .....kill odhcpd process
+                        kill -9 $result
+                else
+                    echo ....not has process odhcpd need killed
+                        fi  
+}
+
+~                                                                                                                                                                        
+~                                           

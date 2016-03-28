@@ -1,0 +1,564 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADDR_ATTR_ADDR	src/ubus.c	/^	ADDR_ATTR_ADDR,$/;"	e	enum:__anon8	file:
+ADDR_ATTR_CLASS	src/ubus.c	/^	ADDR_ATTR_CLASS,$/;"	e	enum:__anon8	file:
+ADDR_ATTR_MAX	src/ubus.c	/^	ADDR_ATTR_MAX$/;"	e	enum:__anon8	file:
+ALL_DHCPV6_RELAYS	src/dhcpv6.h	18;"	d
+ALL_DHCPV6_SERVERS	src/dhcpv6.h	21;"	d
+ALL_IPV6_NODES	src/odhcpd.h	51;"	d
+ALL_IPV6_ROUTERS	src/odhcpd.h	54;"	d
+ARRAY_SIZE	src/odhcpd.h	37;"	d
+DHCPV4_BOOTREPLY	src/dhcpv4.h	/^	DHCPV4_BOOTREPLY = 2$/;"	e	enum:dhcpv4_op
+DHCPV4_BOOTREQUEST	src/dhcpv4.h	/^	DHCPV4_BOOTREQUEST = 1,$/;"	e	enum:dhcpv4_op
+DHCPV4_CLIENT_PORT	src/dhcpv4.h	16;"	d
+DHCPV4_FLAG_BROADCAST	src/dhcpv4.h	19;"	d
+DHCPV4_MSG_ACK	src/dhcpv4.h	/^	DHCPV4_MSG_ACK = 5,$/;"	e	enum:dhcpv4_msg
+DHCPV4_MSG_DECLINE	src/dhcpv4.h	/^	DHCPV4_MSG_DECLINE = 4,$/;"	e	enum:dhcpv4_msg
+DHCPV4_MSG_DISCOVER	src/dhcpv4.h	/^	DHCPV4_MSG_DISCOVER = 1,$/;"	e	enum:dhcpv4_msg
+DHCPV4_MSG_INFORM	src/dhcpv4.h	/^	DHCPV4_MSG_INFORM = 8,$/;"	e	enum:dhcpv4_msg
+DHCPV4_MSG_NAK	src/dhcpv4.h	/^	DHCPV4_MSG_NAK = 6,$/;"	e	enum:dhcpv4_msg
+DHCPV4_MSG_OFFER	src/dhcpv4.h	/^	DHCPV4_MSG_OFFER = 2,$/;"	e	enum:dhcpv4_msg
+DHCPV4_MSG_RELEASE	src/dhcpv4.h	/^	DHCPV4_MSG_RELEASE = 7,$/;"	e	enum:dhcpv4_msg
+DHCPV4_MSG_REQUEST	src/dhcpv4.h	/^	DHCPV4_MSG_REQUEST = 3,$/;"	e	enum:dhcpv4_msg
+DHCPV4_OPT_BROADCAST	src/dhcpv4.h	/^	DHCPV4_OPT_BROADCAST = 28,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_DNSSERVER	src/dhcpv4.h	/^	DHCPV4_OPT_DNSSERVER = 6,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_DOMAIN	src/dhcpv4.h	/^	DHCPV4_OPT_DOMAIN = 15,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_END	src/dhcpv4.h	/^	DHCPV4_OPT_END = 255,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_HOSTNAME	src/dhcpv4.h	/^	DHCPV4_OPT_HOSTNAME = 12,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_IPADDRESS	src/dhcpv4.h	/^	DHCPV4_OPT_IPADDRESS = 50,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_LEASETIME	src/dhcpv4.h	/^	DHCPV4_OPT_LEASETIME = 51,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_MESSAGE	src/dhcpv4.h	/^	DHCPV4_OPT_MESSAGE = 53,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_MTU	src/dhcpv4.h	/^	DHCPV4_OPT_MTU = 26,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_NETMASK	src/dhcpv4.h	/^	DHCPV4_OPT_NETMASK = 1,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_NTPSERVER	src/dhcpv4.h	/^	DHCPV4_OPT_NTPSERVER = 42,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_REBIND	src/dhcpv4.h	/^	DHCPV4_OPT_REBIND = 59,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_RENEW	src/dhcpv4.h	/^	DHCPV4_OPT_RENEW = 58,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_REQUEST	src/dhcpv4.h	/^	DHCPV4_OPT_REQUEST = 17,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_ROUTER	src/dhcpv4.h	/^	DHCPV4_OPT_ROUTER = 3,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_SEARCH_DOMAIN	src/dhcpv4.h	/^	DHCPV4_OPT_SEARCH_DOMAIN = 119,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_SERVERID	src/dhcpv4.h	/^	DHCPV4_OPT_SERVERID = 54,$/;"	e	enum:dhcpv4_opt
+DHCPV4_OPT_USER_CLASS	src/dhcpv4.h	/^	DHCPV4_OPT_USER_CLASS = 77,$/;"	e	enum:dhcpv4_opt
+DHCPV4_SERVER_PORT	src/dhcpv4.h	17;"	d
+DHCPV6_CLIENT_PORT	src/dhcpv6.h	24;"	d
+DHCPV6_DUID_VENDOR	src/dhcpv6.h	67;"	d
+DHCPV6_ENT_NO	src/dhcpv6.h	77;"	d
+DHCPV6_ENT_TYPE	src/dhcpv6.h	78;"	d
+DHCPV6_HOP_COUNT_LIMIT	src/dhcpv6.h	81;"	d
+DHCPV6_MSG_ADVERTISE	src/dhcpv6.h	28;"	d
+DHCPV6_MSG_CONFIRM	src/dhcpv6.h	30;"	d
+DHCPV6_MSG_DECLINE	src/dhcpv6.h	35;"	d
+DHCPV6_MSG_INFORMATION_REQUEST	src/dhcpv6.h	37;"	d
+DHCPV6_MSG_REBIND	src/dhcpv6.h	32;"	d
+DHCPV6_MSG_RECONFIGURE	src/dhcpv6.h	36;"	d
+DHCPV6_MSG_RELAY_FORW	src/dhcpv6.h	38;"	d
+DHCPV6_MSG_RELAY_REPL	src/dhcpv6.h	39;"	d
+DHCPV6_MSG_RELEASE	src/dhcpv6.h	34;"	d
+DHCPV6_MSG_RENEW	src/dhcpv6.h	31;"	d
+DHCPV6_MSG_REPLY	src/dhcpv6.h	33;"	d
+DHCPV6_MSG_REQUEST	src/dhcpv6.h	29;"	d
+DHCPV6_MSG_SOLICIT	src/dhcpv6.h	27;"	d
+DHCPV6_OPT_AUTH	src/dhcpv6.h	48;"	d
+DHCPV6_OPT_CLIENTID	src/dhcpv6.h	41;"	d
+DHCPV6_OPT_DNS_DOMAIN	src/dhcpv6.h	54;"	d
+DHCPV6_OPT_DNS_SERVERS	src/dhcpv6.h	53;"	d
+DHCPV6_OPT_FQDN	src/dhcpv6.h	58;"	d
+DHCPV6_OPT_IA_ADDR	src/dhcpv6.h	44;"	d
+DHCPV6_OPT_IA_NA	src/dhcpv6.h	43;"	d
+DHCPV6_OPT_IA_PD	src/dhcpv6.h	55;"	d
+DHCPV6_OPT_IA_PREFIX	src/dhcpv6.h	56;"	d
+DHCPV6_OPT_INFO_REFRESH	src/dhcpv6.h	57;"	d
+DHCPV6_OPT_INF_MAX_RT	src/dhcpv6.h	60;"	d
+DHCPV6_OPT_INTERFACE_ID	src/dhcpv6.h	50;"	d
+DHCPV6_OPT_ORO	src/dhcpv6.h	45;"	d
+DHCPV6_OPT_PREFIX_CLASS	src/dhcpv6.h	64;"	d
+DHCPV6_OPT_RECONF_ACCEPT	src/dhcpv6.h	52;"	d
+DHCPV6_OPT_RECONF_MSG	src/dhcpv6.h	51;"	d
+DHCPV6_OPT_RELAY_MSG	src/dhcpv6.h	47;"	d
+DHCPV6_OPT_SERVERID	src/dhcpv6.h	42;"	d
+DHCPV6_OPT_SOL_MAX_RT	src/dhcpv6.h	59;"	d
+DHCPV6_OPT_STATUS	src/dhcpv6.h	46;"	d
+DHCPV6_OPT_USER_CLASS	src/dhcpv6.h	49;"	d
+DHCPV6_SERVER_PORT	src/dhcpv6.h	25;"	d
+DHCPV6_STATUS_NOADDRSAVAIL	src/dhcpv6.h	70;"	d
+DHCPV6_STATUS_NOBINDING	src/dhcpv6.h	71;"	d
+DHCPV6_STATUS_NOPREFIXAVAIL	src/dhcpv6.h	74;"	d
+DHCPV6_STATUS_NOTONLINK	src/dhcpv6.h	72;"	d
+DHCPV6_STATUS_OK	src/dhcpv6.h	69;"	d
+DHCPV6_STATUS_USEMULTICAST	src/dhcpv6.h	73;"	d
+DUMP_ATTR_INTERFACE	src/ubus.c	/^	DUMP_ATTR_INTERFACE,$/;"	e	enum:__anon5	file:
+DUMP_ATTR_MAX	src/ubus.c	/^	DUMP_ATTR_MAX$/;"	e	enum:__anon5	file:
+IFACE_ATTR_ADDRESS	src/ubus.c	/^	IFACE_ATTR_ADDRESS,$/;"	e	enum:__anon6	file:
+IFACE_ATTR_DATA	src/ubus.c	/^	IFACE_ATTR_DATA,$/;"	e	enum:__anon6	file:
+IFACE_ATTR_DHCPV4	src/config.c	/^	IFACE_ATTR_DHCPV4,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_DHCPV6	src/config.c	/^	IFACE_ATTR_DHCPV6,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_DHCPV6_RAW	src/config.c	/^	IFACE_ATTR_DHCPV6_RAW,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_DNS	src/config.c	/^	IFACE_ATTR_DNS,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_DOMAIN	src/config.c	/^	IFACE_ATTR_DOMAIN,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_DYNAMICDHCP	src/config.c	/^	IFACE_ATTR_DYNAMICDHCP,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_FILTER_CLASS	src/config.c	/^	IFACE_ATTR_FILTER_CLASS,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_IFNAME	src/config.c	/^	IFACE_ATTR_IFNAME,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_IFNAME	src/ubus.c	/^	IFACE_ATTR_IFNAME,$/;"	e	enum:__anon6	file:
+IFACE_ATTR_IGNORE	src/config.c	/^	IFACE_ATTR_IGNORE,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_INTERFACE	src/config.c	/^	IFACE_ATTR_INTERFACE,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_INTERFACE	src/ubus.c	/^	IFACE_ATTR_INTERFACE,$/;"	e	enum:__anon6	file:
+IFACE_ATTR_LEASETIME	src/config.c	/^	IFACE_ATTR_LEASETIME,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_LIMIT	src/config.c	/^	IFACE_ATTR_LIMIT,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_MASTER	src/config.c	/^	IFACE_ATTR_MASTER,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_MAX	src/config.c	/^	IFACE_ATTR_MAX$/;"	e	enum:__anon1	file:
+IFACE_ATTR_MAX	src/ubus.c	/^	IFACE_ATTR_MAX,$/;"	e	enum:__anon6	file:
+IFACE_ATTR_NDP	src/config.c	/^	IFACE_ATTR_NDP,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_NDPROXY_ROUTING	src/config.c	/^	IFACE_ATTR_NDPROXY_ROUTING,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_NDPROXY_SLAVE	src/config.c	/^	IFACE_ATTR_NDPROXY_SLAVE,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_NDPROXY_STATIC	src/config.c	/^	IFACE_ATTR_NDPROXY_STATIC,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_NETWORKID	src/config.c	/^	IFACE_ATTR_NETWORKID,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_PD_CER	src/config.c	/^	IFACE_ATTR_PD_CER,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_PD_MANAGER	src/config.c	/^	IFACE_ATTR_PD_MANAGER,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_PREFIX	src/ubus.c	/^	IFACE_ATTR_PREFIX,$/;"	e	enum:__anon6	file:
+IFACE_ATTR_RA	src/config.c	/^	IFACE_ATTR_RA,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_RA_DEFAULT	src/config.c	/^	IFACE_ATTR_RA_DEFAULT,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_RA_MANAGEMENT	src/config.c	/^	IFACE_ATTR_RA_MANAGEMENT,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_RA_OFFLINK	src/config.c	/^	IFACE_ATTR_RA_OFFLINK,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_RA_PREFERENCE	src/config.c	/^	IFACE_ATTR_RA_PREFERENCE,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_ROUTER	src/config.c	/^	IFACE_ATTR_ROUTER,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_START	src/config.c	/^	IFACE_ATTR_START,$/;"	e	enum:__anon1	file:
+IFACE_ATTR_UP	src/ubus.c	/^	IFACE_ATTR_UP,$/;"	e	enum:__anon6	file:
+IFACE_ATTR_UPSTREAM	src/config.c	/^	IFACE_ATTR_UPSTREAM,$/;"	e	enum:__anon1	file:
+IOV_CERID	src/dhcpv6.c	/^	IOV_CERID,$/;"	e	enum:__anon4	file:
+IOV_DEST	src/dhcpv6.c	/^	IOV_DEST,$/;"	e	enum:__anon4	file:
+IOV_DHCPV6_RAW	src/dhcpv6.c	/^	IOV_DHCPV6_RAW,$/;"	e	enum:__anon4	file:
+IOV_DNS	src/dhcpv6.c	/^	IOV_DNS,$/;"	e	enum:__anon4	file:
+IOV_DNS_ADDR	src/dhcpv6.c	/^	IOV_DNS_ADDR,$/;"	e	enum:__anon4	file:
+IOV_MAXRT	src/dhcpv6.c	/^	IOV_MAXRT,$/;"	e	enum:__anon4	file:
+IOV_NESTED	src/dhcpv6.c	/^	IOV_NESTED = 0,$/;"	e	enum:__anon4	file:
+IOV_PDBUF	src/dhcpv6.c	/^	IOV_PDBUF,$/;"	e	enum:__anon4	file:
+IOV_REFRESH	src/dhcpv6.c	110;"	d	file:
+IOV_RELAY_MSG	src/dhcpv6.c	/^	IOV_RELAY_MSG,$/;"	e	enum:__anon4	file:
+IOV_SEARCH	src/dhcpv6.c	/^	IOV_SEARCH,$/;"	e	enum:__anon4	file:
+IOV_SEARCH_DOMAIN	src/dhcpv6.c	/^	IOV_SEARCH_DOMAIN,$/;"	e	enum:__anon4	file:
+IOV_STAT	src/dhcpv6.c	104;"	d	file:
+IOV_TOTAL	src/dhcpv6.c	/^	IOV_TOTAL$/;"	e	enum:__anon4	file:
+LEASE_ATTR_DUID	src/config.c	/^	LEASE_ATTR_DUID,$/;"	e	enum:__anon2	file:
+LEASE_ATTR_HOSTID	src/config.c	/^	LEASE_ATTR_HOSTID,$/;"	e	enum:__anon2	file:
+LEASE_ATTR_IP	src/config.c	/^	LEASE_ATTR_IP,$/;"	e	enum:__anon2	file:
+LEASE_ATTR_MAC	src/config.c	/^	LEASE_ATTR_MAC,$/;"	e	enum:__anon2	file:
+LEASE_ATTR_MAX	src/config.c	/^	LEASE_ATTR_MAX$/;"	e	enum:__anon2	file:
+LEASE_ATTR_NAME	src/config.c	/^	LEASE_ATTR_NAME,$/;"	e	enum:__anon2	file:
+MaxPreferredTime	src/router.h	36;"	d
+MaxRtrAdvInterval	src/router.h	33;"	d
+MaxValidTime	src/router.h	35;"	d
+MinRtrAdvInterval	src/router.h	34;"	d
+NDP_MAX_NEIGHBORS	src/ndp.h	23;"	d
+ND_OPT_DNS_SEARCH	src/odhcpd.h	42;"	d
+ND_OPT_RECURSIVE_DNS	src/odhcpd.h	41;"	d
+ND_OPT_ROUTE_INFO	src/odhcpd.h	40;"	d
+ND_RA_FLAG_PROXY	src/router.h	38;"	d
+ND_RA_PREF_HIGH	src/router.h	39;"	d
+ND_RA_PREF_LOW	src/router.h	40;"	d
+OBJ_ATTR_ID	src/ubus.c	/^	OBJ_ATTR_ID,$/;"	e	enum:__anon7	file:
+OBJ_ATTR_MAX	src/ubus.c	/^	OBJ_ATTR_MAX$/;"	e	enum:__anon7	file:
+OBJ_ATTR_PATH	src/ubus.c	/^	OBJ_ATTR_PATH,$/;"	e	enum:__anon7	file:
+ODHCPD_ATTR_LEASEFILE	src/config.c	/^	ODHCPD_ATTR_LEASEFILE,$/;"	e	enum:__anon3	file:
+ODHCPD_ATTR_LEASETRIGGER	src/config.c	/^	ODHCPD_ATTR_LEASETRIGGER,$/;"	e	enum:__anon3	file:
+ODHCPD_ATTR_MAINDHCP	src/config.c	/^	ODHCPD_ATTR_MAINDHCP,$/;"	e	enum:__anon3	file:
+ODHCPD_ATTR_MAX	src/config.c	/^	ODHCPD_ATTR_MAX$/;"	e	enum:__anon3	file:
+RELAYD_BUFFER_SIZE	src/odhcpd.h	44;"	d
+RELAYD_DISABLED	src/odhcpd.h	/^	RELAYD_DISABLED,$/;"	e	enum:odhcpd_mode
+RELAYD_HYBRID	src/odhcpd.h	/^	RELAYD_HYBRID$/;"	e	enum:odhcpd_mode
+RELAYD_MANAGED_MFLAG	src/odhcpd.h	176;"	d
+RELAYD_MANAGED_NO_AFLAG	src/odhcpd.h	177;"	d
+RELAYD_MAX_PREFIXES	src/odhcpd.h	45;"	d
+RELAYD_RELAY	src/odhcpd.h	/^	RELAYD_RELAY,$/;"	e	enum:odhcpd_mode
+RELAYD_SERVER	src/odhcpd.h	/^	RELAYD_SERVER,$/;"	e	enum:odhcpd_mode
+SOL_NETLINK	src/ndp.h	20;"	d
+_packed	src/dhcpv6.h	/^} _packed;$/;"	v	typeref:struct:dhcpv6_auth_reconfigure
+_packed	src/dhcpv6.h	/^} _packed;$/;"	v	typeref:struct:dhcpv6_ia_addr
+_packed	src/dhcpv6.h	/^} _packed;$/;"	v	typeref:struct:dhcpv6_ia_hdr
+_packed	src/dhcpv6.h	/^} _packed;$/;"	v	typeref:struct:dhcpv6_ia_prefix
+_packed	src/odhcpd.h	48;"	d
+_unused	src/odhcpd.h	47;"	d
+accept_reconf	src/dhcpv6.h	/^	bool accept_reconf;$/;"	m	struct:dhcpv6_assignment
+addr	src/dhcpv4.h	/^	uint32_t addr;$/;"	m	struct:dhcpv4_assignment
+addr	src/dhcpv6.h	/^	struct in6_addr addr;$/;"	m	struct:dhcpv6_cer_id	typeref:struct:dhcpv6_cer_id::in6_addr
+addr	src/dhcpv6.h	/^	struct in6_addr addr;$/;"	m	struct:dhcpv6_ia_addr	typeref:struct:dhcpv6_ia_addr::in6_addr
+addr	src/dhcpv6.h	/^	struct in6_addr addr;$/;"	m	struct:dhcpv6_ia_prefix	typeref:struct:dhcpv6_ia_prefix::in6_addr
+addr	src/ndp.h	/^	struct in6_addr addr;$/;"	m	struct:ndp_neighbor	typeref:struct:ndp_neighbor::in6_addr
+addr	src/odhcpd.h	/^	struct in6_addr addr;$/;"	m	struct:odhcpd_ipaddr	typeref:struct:odhcpd_ipaddr::in6_addr
+addr_attrs	src/ubus.c	/^static const struct blobmsg_policy addr_attrs[ADDR_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+algorithm	src/dhcpv6.h	/^	uint8_t algorithm;$/;"	m	struct:dhcpv6_auth_reconfigure
+all_class	src/dhcpv6.h	/^	bool all_class;$/;"	m	struct:dhcpv6_assignment
+always_rewrite_dns	src/odhcpd.h	/^	bool always_rewrite_dns;$/;"	m	struct:interface
+append_reply	src/dhcpv6-ia.c	/^static size_t append_reply(uint8_t *buf, size_t buflen, uint16_t status,$/;"	f	file:	signature:(uint8_t *buf, size_t buflen, uint16_t status, const struct dhcpv6_ia_hdr *ia, struct dhcpv6_assignment *a, struct interface *iface, bool request)
+apply_lease	src/dhcpv6-ia.c	/^static void apply_lease(struct interface *iface, struct dhcpv6_assignment *a, bool add)$/;"	f	file:	signature:(struct interface *iface, struct dhcpv6_assignment *a, bool add)
+assign_na	src/dhcpv6-ia.c	/^static bool assign_na(struct interface *iface, struct dhcpv6_assignment *assign)$/;"	f	file:	signature:(struct interface *iface, struct dhcpv6_assignment *assign)
+assign_pd	src/dhcpv6-ia.c	/^static bool assign_pd(struct interface *iface, struct dhcpv6_assignment *assign)$/;"	f	file:	signature:(struct interface *iface, struct dhcpv6_assignment *assign)
+assigned	src/dhcpv6.h	/^	uint32_t assigned;$/;"	m	struct:dhcpv6_assignment
+auth	src/dhcpv6.h	/^	uint8_t auth[16];$/;"	m	struct:dhcpv6_cer_id
+auth_type	src/dhcpv6.h	/^	uint16_t auth_type;$/;"	m	struct:dhcpv6_cer_id
+b	src/config.c	/^static struct blob_buf b;$/;"	v	typeref:struct:blob_buf	file:
+b	src/ubus.c	/^static struct blob_buf b;$/;"	v	typeref:struct:blob_buf	file:
+bpf	src/ndp.c	/^static struct sock_filter bpf[] = {$/;"	v	typeref:struct:sock_filter	file:
+bpf_prog	src/ndp.c	/^static const struct sock_fprog bpf_prog = {sizeof(bpf) \/ sizeof(*bpf), bpf};$/;"	v	typeref:struct:sock_fprog	file:
+chaddr	src/dhcpv4.h	/^	uint8_t chaddr[16];$/;"	m	struct:dhcpv4_message
+ciaddr	src/dhcpv4.h	/^	struct in_addr ciaddr;$/;"	m	struct:dhcpv4_message	typeref:struct:dhcpv4_message::in_addr
+classes	src/dhcpv6.h	/^	uint16_t *classes;$/;"	m	struct:dhcpv6_assignment
+classes_cnt	src/dhcpv6.h	/^	uint8_t classes_cnt;$/;"	m	struct:dhcpv6_assignment
+clean_interface	src/config.c	/^static void clean_interface(struct interface *iface)$/;"	f	file:	signature:(struct interface *iface)
+clid_data	src/dhcpv6.h	/^	uint8_t clid_data[];$/;"	m	struct:dhcpv6_assignment
+clid_len	src/dhcpv6.h	/^	uint8_t clid_len;$/;"	m	struct:dhcpv6_assignment
+close_interface	src/config.c	/^static void close_interface(struct interface *iface)$/;"	f	file:	signature:(struct interface *iface)
+config	src/config.c	/^struct config config = {false, NULL, NULL};$/;"	v	typeref:struct:config
+config	src/odhcpd.h	/^struct config {$/;"	s
+config	src/odhcpd.h	/^} config;$/;"	v	typeref:struct:config
+config_parse_interface	src/config.c	/^int config_parse_interface(void *data, size_t len, const char *name, bool overwrite)$/;"	f	signature:(void *data, size_t len, const char *name, bool overwrite)
+config_parse_interface	src/odhcpd.h	/^int config_parse_interface(void *data, size_t len, const char *iname, bool overwrite);$/;"	p	signature:(void *data, size_t len, const char *iname, bool overwrite)
+container_of	src/odhcpd.h	30;"	d
+data	src/dhcpv4.h	/^	uint8_t data[];$/;"	m	struct:dhcpv4_option
+data	src/router.h	/^	uint8_t data[6];$/;"	m	struct:icmpv6_opt
+default_router	src/odhcpd.h	/^	int default_router;$/;"	m	struct:interface
+dhcp_cb	src/odhcpd.h	/^	char *dhcp_cb;$/;"	m	struct:config
+dhcp_statefile	src/odhcpd.h	/^	char *dhcp_statefile;$/;"	m	struct:config
+dhcpv4	src/odhcpd.h	/^	enum odhcpd_mode dhcpv4;$/;"	m	struct:interface	typeref:enum:interface::odhcpd_mode
+dhcpv4_assign	src/dhcpv4.c	/^static bool dhcpv4_assign(struct interface *iface,$/;"	f	file:	signature:(struct interface *iface, struct dhcpv4_assignment *assign, uint32_t raddr)
+dhcpv4_assignment	src/dhcpv4.h	/^struct dhcpv4_assignment {$/;"	s
+dhcpv4_assignments	src/odhcpd.h	/^	struct list_head dhcpv4_assignments;$/;"	m	struct:interface	typeref:struct:interface::list_head
+dhcpv4_dns	src/odhcpd.h	/^	struct in_addr *dhcpv4_dns;$/;"	m	struct:interface	typeref:struct:interface::in_addr
+dhcpv4_dns_cnt	src/odhcpd.h	/^	size_t dhcpv4_dns_cnt;$/;"	m	struct:interface
+dhcpv4_end	src/odhcpd.h	/^	struct in_addr dhcpv4_end;$/;"	m	struct:interface	typeref:struct:interface::in_addr
+dhcpv4_event	src/odhcpd.h	/^	struct odhcpd_event dhcpv4_event;$/;"	m	struct:interface	typeref:struct:interface::odhcpd_event
+dhcpv4_for_each_option	src/dhcpv4.h	91;"	d
+dhcpv4_lease	src/dhcpv4.c	/^static struct dhcpv4_assignment* dhcpv4_lease(struct interface *iface,$/;"	f	file:	signature:(struct interface *iface, enum dhcpv4_msg msg, const uint8_t *mac, struct in_addr reqaddr, const char *hostname)
+dhcpv4_lease	src/dhcpv4.c	/^static struct dhcpv4_assignment* dhcpv4_lease(struct interface *iface,$/;"	p	file:	signature:(struct interface *iface, enum dhcpv4_msg msg, const uint8_t *mac, struct in_addr reqaddr, const char *hostname)
+dhcpv4_leasetime	src/odhcpd.h	/^	uint32_t dhcpv4_leasetime;$/;"	m	struct:interface
+dhcpv4_message	src/dhcpv4.h	/^struct dhcpv4_message {$/;"	s
+dhcpv4_msg	src/dhcpv4.h	/^enum dhcpv4_msg {$/;"	g
+dhcpv4_msg_to_string	src/dhcpv4.c	/^char *dhcpv4_msg_to_string(uint8_t reqmsg)$/;"	f	signature:(uint8_t reqmsg)
+dhcpv4_op	src/dhcpv4.h	/^enum dhcpv4_op {$/;"	g
+dhcpv4_opt	src/dhcpv4.h	/^enum dhcpv4_opt {$/;"	g
+dhcpv4_option	src/dhcpv4.h	/^struct dhcpv4_option {$/;"	s
+dhcpv4_put	src/dhcpv4.c	/^static void dhcpv4_put(struct dhcpv4_message *msg, uint8_t **cookie,$/;"	f	file:	signature:(struct dhcpv4_message *msg, uint8_t **cookie, uint8_t type, uint8_t len, const void *data)
+dhcpv4_router	src/odhcpd.h	/^	struct in_addr *dhcpv4_router;$/;"	m	struct:interface	typeref:struct:interface::in_addr
+dhcpv4_router_cnt	src/odhcpd.h	/^	size_t dhcpv4_router_cnt;$/;"	m	struct:interface
+dhcpv4_start	src/odhcpd.h	/^	struct in_addr dhcpv4_start;$/;"	m	struct:interface	typeref:struct:interface::in_addr
+dhcpv6	src/odhcpd.h	/^	enum odhcpd_mode dhcpv6;$/;"	m	struct:interface	typeref:enum:interface::odhcpd_mode
+dhcpv6_assignment	src/dhcpv6.h	/^struct dhcpv6_assignment {$/;"	s
+dhcpv6_auth_reconfigure	src/dhcpv6.h	/^struct dhcpv6_auth_reconfigure {$/;"	s
+dhcpv6_cer_id	src/dhcpv6.h	/^struct dhcpv6_cer_id {$/;"	s
+dhcpv6_client_header	src/dhcpv6.h	/^struct dhcpv6_client_header {$/;"	s
+dhcpv6_event	src/odhcpd.h	/^	struct odhcpd_event dhcpv6_event;$/;"	m	struct:interface	typeref:struct:interface::odhcpd_event
+dhcpv6_for_each_option	src/dhcpv6.h	180;"	d
+dhcpv6_handle_ia	src/dhcpv6-ia.c	/^ssize_t dhcpv6_handle_ia(uint8_t *buf, size_t buflen, struct interface *iface,$/;"	f	signature:(uint8_t *buf, size_t buflen, struct interface *iface, const struct sockaddr_in6 *addr, const void *data, const uint8_t *end)
+dhcpv6_handle_ia	src/dhcpv6.h	/^ssize_t dhcpv6_handle_ia(uint8_t *buf, size_t buflen, struct interface *iface,$/;"	p	signature:(uint8_t *buf, size_t buflen, struct interface *iface, const struct sockaddr_in6 *addr, const void *data, const uint8_t *end)
+dhcpv6_ia_addr	src/dhcpv6.h	/^struct dhcpv6_ia_addr {$/;"	s
+dhcpv6_ia_hdr	src/dhcpv6.h	/^struct dhcpv6_ia_hdr {$/;"	s
+dhcpv6_ia_init	src/dhcpv6-ia.c	/^int dhcpv6_ia_init(void)$/;"	f	signature:(void)
+dhcpv6_ia_init	src/dhcpv6.h	/^int dhcpv6_ia_init(void);$/;"	p	signature:(void)
+dhcpv6_ia_prefix	src/dhcpv6.h	/^struct dhcpv6_ia_prefix {$/;"	s
+dhcpv6_init_ia	src/dhcpv6.h	/^int dhcpv6_init_ia(struct interface *iface, int socket);$/;"	p	signature:(struct interface *iface, int socket)
+dhcpv6_log	src/dhcpv6-ia.c	/^static void dhcpv6_log(uint8_t msgtype, struct interface *iface, time_t now,$/;"	f	file:	signature:(uint8_t msgtype, struct interface *iface, time_t now, const char *duidbuf, bool is_pd, struct dhcpv6_assignment *a, int code)
+dhcpv6_pd_cer	src/odhcpd.h	/^	struct in6_addr dhcpv6_pd_cer;$/;"	m	struct:interface	typeref:struct:interface::in6_addr
+dhcpv6_pd_manager	src/odhcpd.h	/^	char dhcpv6_pd_manager[128];$/;"	m	struct:interface
+dhcpv6_raw	src/odhcpd.h	/^	void *dhcpv6_raw;$/;"	m	struct:interface
+dhcpv6_raw_len	src/odhcpd.h	/^	size_t dhcpv6_raw_len;$/;"	m	struct:interface
+dhcpv6_relay_forward_envelope	src/dhcpv6.h	/^struct dhcpv6_relay_forward_envelope {$/;"	s
+dhcpv6_relay_header	src/dhcpv6.h	/^struct dhcpv6_relay_header {$/;"	s
+dhcpv6_write_statefile	src/dhcpv6-ia.c	/^void dhcpv6_write_statefile(void)$/;"	f	signature:(void)
+dhcpv6_write_statefile	src/dhcpv6.h	/^void dhcpv6_write_statefile(void);$/;"	p	signature:(void)
+dns	src/odhcpd.h	/^	struct in6_addr *dns;$/;"	m	struct:interface	typeref:struct:interface::in6_addr
+dns_cnt	src/odhcpd.h	/^	size_t dns_cnt;$/;"	m	struct:interface
+dprefix	src/odhcpd.h	/^	uint8_t dprefix;$/;"	m	struct:odhcpd_ipaddr
+duid	src/odhcpd.h	/^	uint8_t *duid;$/;"	m	struct:lease
+duid_len	src/odhcpd.h	/^	uint16_t duid_len;$/;"	m	struct:lease
+dump	src/ubus.c	/^static struct blob_attr *dump = NULL;$/;"	v	typeref:struct:blob_attr	file:
+dump_attrs	src/ubus.c	/^static const struct blobmsg_policy dump_attrs[DUMP_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+event_handler	src/ubus.c	/^static struct ubus_event_handler event_handler = { .cb = handle_event };$/;"	v	typeref:struct:ubus_event_handler	file:
+external	src/odhcpd.h	/^	bool external;$/;"	m	struct:interface
+file	src/dhcpv4.h	/^	char file[128];$/;"	m	struct:dhcpv4_message
+filter_class	src/odhcpd.h	/^	char *filter_class;$/;"	m	struct:interface
+find_neighbor	src/ndp.c	/^static struct ndp_neighbor* find_neighbor(struct in6_addr *addr, bool strict)$/;"	f	file:	signature:(struct in6_addr *addr, bool strict)
+find_neighbor	src/ndp.c	/^static struct ndp_neighbor* find_neighbor(struct in6_addr *addr, bool strict);$/;"	p	file:	signature:(struct in6_addr *addr, bool strict)
+flags	src/dhcpv4.h	/^	uint16_t flags;$/;"	m	struct:dhcpv4_message
+forward_router_advertisement	src/router.c	/^static void forward_router_advertisement(uint8_t *data, size_t len)$/;"	f	file:	signature:(uint8_t *data, size_t len)
+forward_router_advertisement	src/router.c	/^static void forward_router_advertisement(uint8_t *data, size_t len);$/;"	p	file:	signature:(uint8_t *data, size_t len)
+forward_router_solicitation	src/router.c	/^static void forward_router_solicitation(const struct interface *iface)$/;"	f	file:	signature:(const struct interface *iface)
+forward_router_solicitation	src/router.c	/^static void forward_router_solicitation(const struct interface *iface);$/;"	p	file:	signature:(const struct interface *iface)
+fp_route	src/router.c	/^static FILE *fp_route = NULL;$/;"	v	file:
+free_dhcpv6_assignment	src/dhcpv6-ia.c	/^void free_dhcpv6_assignment(struct dhcpv6_assignment *c)$/;"	f	signature:(struct dhcpv6_assignment *c)
+free_neighbor	src/ndp.c	/^static void free_neighbor(struct ndp_neighbor *n)$/;"	f	file:	signature:(struct ndp_neighbor *n)
+get_interface	src/config.c	/^static struct interface* get_interface(const char *name)$/;"	f	file:	signature:(const char *name)
+giaddr	src/dhcpv4.h	/^	struct in_addr giaddr;$/;"	m	struct:dhcpv4_message	typeref:struct:dhcpv4_message::in_addr
+handle_client_request	src/dhcpv6.c	/^static void handle_client_request(void *addr, void *data, size_t len,$/;"	f	file:	signature:(void *addr, void *data, size_t len, struct interface *iface, void *dest_addr)
+handle_client_request	src/dhcpv6.c	/^static void handle_client_request(void *addr, void *data, size_t len,$/;"	p	file:	signature:(void *addr, void *data, size_t len, struct interface *iface, void *dest_addr)
+handle_dgram	src/odhcpd.h	/^	void (*handle_dgram)(void *addr, void *data, size_t len,$/;"	m	struct:odhcpd_event
+handle_dhcpv4	src/dhcpv4.c	/^static void handle_dhcpv4(void *addr, void *data, size_t len,$/;"	f	file:	signature:(void *addr, void *data, size_t len, struct interface *iface, _unused void *dest_addr)
+handle_dhcpv4	src/dhcpv4.c	/^static void handle_dhcpv4(void *addr, void *data, size_t len,$/;"	p	file:	signature:(void *addr, void *data, size_t len, struct interface *iface, void *dest_addr)
+handle_dhcpv4_leases	src/ubus.c	/^static int handle_dhcpv4_leases(struct ubus_context *ctx, _unused struct ubus_object *obj,$/;"	f	file:	signature:(struct ubus_context *ctx, _unused struct ubus_object *obj, struct ubus_request_data *req, _unused const char *method, _unused struct blob_attr *msg)
+handle_dhcpv6	src/dhcpv6.c	/^static void handle_dhcpv6(void *addr, void *data, size_t len,$/;"	f	file:	signature:(void *addr, void *data, size_t len, struct interface *iface, void *dest_addr)
+handle_dhcpv6	src/dhcpv6.c	/^static void handle_dhcpv6(void *addr, void *data, size_t len,$/;"	p	file:	signature:(void *addr, void *data, size_t len, struct interface *iface, void *dest)
+handle_dhcpv6_leases	src/ubus.c	/^static int handle_dhcpv6_leases(_unused struct ubus_context *ctx, _unused struct ubus_object *obj,$/;"	f	file:	signature:(_unused struct ubus_context *ctx, _unused struct ubus_object *obj, _unused struct ubus_request_data *req, _unused const char *method, _unused struct blob_attr *msg)
+handle_dump	src/ubus.c	/^static void handle_dump(_unused struct ubus_request *req, _unused int type, struct blob_attr *msg)$/;"	f	file:	signature:(_unused struct ubus_request *req, _unused int type, struct blob_attr *msg)
+handle_event	src/ubus.c	/^static void handle_event(_unused struct ubus_context *ctx, _unused struct ubus_event_handler *ev,$/;"	f	file:	signature:(_unused struct ubus_context *ctx, _unused struct ubus_event_handler *ev, _unused const char *type, struct blob_attr *msg)
+handle_icmpv6	src/router.c	/^static void handle_icmpv6(void *addr, void *data, size_t len,$/;"	f	file:	signature:(void *addr, void *data, size_t len, struct interface *iface, _unused void *dest)
+handle_icmpv6	src/router.c	/^static void handle_icmpv6(void *addr, void *data, size_t len,$/;"	p	file:	signature:(void *addr, void *data, size_t len, struct interface *iface, void *dest)
+handle_nested_message	src/dhcpv6.c	/^static void handle_nested_message(uint8_t *data, size_t len,$/;"	f	file:	signature:(uint8_t *data, size_t len, uint8_t **opts, uint8_t **end, struct iovec iov[IOV_TOTAL - 1])
+handle_rtnetlink	src/ndp.c	/^static void handle_rtnetlink(_unused void *addr, void *data, size_t len,$/;"	f	file:	signature:(_unused void *addr, void *data, size_t len, _unused struct interface *iface, _unused void *dest)
+handle_rtnetlink	src/ndp.c	/^static void handle_rtnetlink(void *addr, void *data, size_t len,$/;"	p	file:	signature:(void *addr, void *data, size_t len, struct interface *iface, void *dest)
+handle_signal	src/config.c	/^static void handle_signal(int signal)$/;"	f	file:	signature:(int signal)
+handle_solicit	src/ndp.c	/^static void handle_solicit(void *addr, void *data, size_t len,$/;"	f	file:	signature:(void *addr, void *data, size_t len, struct interface *iface, _unused void *dest)
+handle_solicit	src/ndp.c	/^static void handle_solicit(void *addr, void *data, size_t len,$/;"	p	file:	signature:(void *addr, void *data, size_t len, struct interface *iface, void *dest)
+handle_update	src/ubus.c	/^static int handle_update(_unused struct ubus_context *ctx, _unused struct ubus_object *obj,$/;"	f	file:	signature:(_unused struct ubus_context *ctx, _unused struct ubus_object *obj, _unused struct ubus_request_data *req, _unused const char *method, struct blob_attr *msg)
+has_class	src/odhcpd.h	/^	bool has_class;$/;"	m	struct:odhcpd_ipaddr
+head	src/dhcpv4.h	/^	struct list_head head;$/;"	m	struct:dhcpv4_assignment	typeref:struct:dhcpv4_assignment::list_head
+head	src/dhcpv6.h	/^	struct list_head head;$/;"	m	struct:dhcpv6_assignment	typeref:struct:dhcpv6_assignment::list_head
+head	src/ndp.h	/^	struct list_head head;$/;"	m	struct:ndp_neighbor	typeref:struct:ndp_neighbor::list_head
+head	src/odhcpd.h	/^	struct list_head head;$/;"	m	struct:interface	typeref:struct:interface::list_head
+head	src/odhcpd.h	/^	struct list_head head;$/;"	m	struct:lease	typeref:struct:lease::list_head
+hexdigits	src/odhcpd.c	/^static const char hexdigits[] = "0123456789abcdef";$/;"	v	file:
+hexvals	src/odhcpd.c	/^static const int8_t hexvals[] = {$/;"	v	file:
+hlen	src/dhcpv4.h	/^	uint8_t hlen;$/;"	m	struct:dhcpv4_message
+hop_count	src/dhcpv6.h	/^	uint8_t hop_count;$/;"	m	struct:dhcpv6_relay_forward_envelope
+hop_count	src/dhcpv6.h	/^	uint8_t hop_count;$/;"	m	struct:dhcpv6_relay_header
+hops	src/dhcpv4.h	/^	uint8_t hops;$/;"	m	struct:dhcpv4_message
+hostid	src/odhcpd.h	/^	uint32_t hostid;$/;"	m	struct:lease
+hostname	src/dhcpv4.h	/^	char hostname[];$/;"	m	struct:dhcpv4_assignment
+hostname	src/dhcpv6.h	/^	char *hostname;$/;"	m	struct:dhcpv6_assignment
+hostname	src/odhcpd.h	/^	char hostname[];$/;"	m	struct:lease
+htype	src/dhcpv4.h	/^	uint8_t htype;$/;"	m	struct:dhcpv4_message
+hwaddr	src/dhcpv4.h	/^	uint8_t hwaddr[6];$/;"	m	struct:dhcpv4_assignment
+ia_addr	src/odhcpd.h	/^	struct odhcpd_ipaddr ia_addr[8];$/;"	m	struct:interface	typeref:struct:interface::odhcpd_ipaddr
+ia_addr_len	src/odhcpd.h	/^	size_t ia_addr_len;$/;"	m	struct:interface
+ia_assignments	src/odhcpd.h	/^	struct list_head ia_assignments;$/;"	m	struct:interface	typeref:struct:interface::list_head
+ia_reconf	src/odhcpd.h	/^	bool ia_reconf;$/;"	m	struct:interface
+iaid	src/dhcpv6.h	/^	uint32_t iaid;$/;"	m	struct:dhcpv6_assignment
+iaid	src/dhcpv6.h	/^	uint32_t iaid;$/;"	m	struct:dhcpv6_ia_hdr
+icmpv6_for_each_option	src/router.h	27;"	d
+icmpv6_opt	src/router.h	/^struct icmpv6_opt {$/;"	s
+iface	src/ndp.h	/^	struct interface *iface;$/;"	m	struct:ndp_neighbor	typeref:struct:ndp_neighbor::interface
+iface_attr_info	src/config.c	/^static const struct uci_blob_param_info iface_attr_info[IFACE_ATTR_MAX] = {$/;"	v	typeref:struct:uci_blob_param_info	file:
+iface_attrs	src/config.c	/^static const struct blobmsg_policy iface_attrs[IFACE_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+iface_attrs	src/ubus.c	/^static const struct blobmsg_policy iface_attrs[IFACE_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+ifindex	src/odhcpd.h	/^	int ifindex;$/;"	m	struct:interface
+ifname	src/odhcpd.h	/^	char ifname[IF_NAMESIZE];$/;"	m	struct:interface
+ignore	src/odhcpd.h	/^	bool ignore;$/;"	m	struct:interface
+init_dhcpv4	src/dhcpv4.c	/^int init_dhcpv4(void)$/;"	f	signature:(void)
+init_dhcpv4	src/odhcpd.h	/^int init_dhcpv4(void);$/;"	p	signature:(void)
+init_dhcpv6	src/dhcpv6.c	/^int init_dhcpv6(void)$/;"	f	signature:(void)
+init_dhcpv6	src/odhcpd.h	/^int init_dhcpv6(void);$/;"	p	signature:(void)
+init_ndp	src/ndp.c	/^int init_ndp(void)$/;"	f	signature:(void)
+init_ndp	src/odhcpd.h	/^int init_ndp(void);$/;"	p	signature:(void)
+init_router	src/odhcpd.h	/^int init_router(void);$/;"	p	signature:(void)
+init_router	src/router.c	/^int init_router(void)$/;"	f	signature:(void)
+init_ubus	src/odhcpd.h	/^int init_ubus(void);$/;"	p	signature:(void)
+init_ubus	src/ubus.c	/^int init_ubus(void)$/;"	f	signature:(void)
+interface	src/odhcpd.h	/^struct interface {$/;"	s
+interface_attr_list	src/config.c	/^const struct uci_blob_param_list interface_attr_list = {$/;"	v	typeref:struct:uci_blob_param_list
+interface_id_data	src/dhcpv6.h	/^	uint32_t interface_id_data;$/;"	m	struct:dhcpv6_relay_forward_envelope
+interface_id_len	src/dhcpv6.h	/^	uint16_t interface_id_len;$/;"	m	struct:dhcpv6_relay_forward_envelope
+interface_id_type	src/dhcpv6.h	/^	uint16_t interface_id_type;$/;"	m	struct:dhcpv6_relay_forward_envelope
+interfaces	src/config.c	/^struct list_head interfaces = LIST_HEAD_INIT(interfaces);$/;"	v	typeref:struct:list_head
+inuse	src/odhcpd.h	/^	bool inuse;$/;"	m	struct:interface
+ioctl_sock	src/odhcpd.c	/^static int ioctl_sock;$/;"	v	file:
+ipaddr	src/odhcpd.h	/^	struct in_addr ipaddr;$/;"	m	struct:lease	typeref:struct:lease::in_addr
+key	src/dhcpv6.h	/^	uint8_t key[16];$/;"	m	struct:dhcpv6_assignment
+key	src/dhcpv6.h	/^	uint8_t key[16];$/;"	m	struct:dhcpv6_auth_reconfigure
+learn_routes	src/odhcpd.h	/^	int learn_routes;$/;"	m	struct:interface
+lease	src/odhcpd.h	/^struct lease {$/;"	s
+lease_attr_list	src/config.c	/^const struct uci_blob_param_list lease_attr_list = {$/;"	v	typeref:struct:uci_blob_param_list
+lease_attrs	src/config.c	/^static const struct blobmsg_policy lease_attrs[LEASE_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+leases	src/config.c	/^struct list_head leases = LIST_HEAD_INIT(leases);$/;"	v	typeref:struct:list_head
+legacy	src/odhcpd.h	/^	bool legacy;$/;"	m	struct:config
+len	src/dhcpv4.h	/^	uint8_t len;$/;"	m	struct:dhcpv4_option
+len	src/dhcpv6.h	/^	uint16_t len;$/;"	m	struct:dhcpv6_auth_reconfigure
+len	src/dhcpv6.h	/^	uint16_t len;$/;"	m	struct:dhcpv6_cer_id
+len	src/dhcpv6.h	/^	uint16_t len;$/;"	m	struct:dhcpv6_ia_addr
+len	src/dhcpv6.h	/^	uint16_t len;$/;"	m	struct:dhcpv6_ia_hdr
+len	src/dhcpv6.h	/^	uint16_t len;$/;"	m	struct:dhcpv6_ia_prefix
+len	src/ndp.h	/^	uint8_t len;$/;"	m	struct:ndp_neighbor
+len	src/router.h	/^	uint8_t len;$/;"	m	struct:icmpv6_opt
+length	src/dhcpv6.h	/^	uint8_t length; \/\/ length == 128 -> IA_NA, length <= 64 -> IA_PD$/;"	m	struct:dhcpv6_assignment
+link_address	src/dhcpv6.h	/^	struct in6_addr link_address;$/;"	m	struct:dhcpv6_relay_forward_envelope	typeref:struct:dhcpv6_relay_forward_envelope::in6_addr
+link_address	src/dhcpv6.h	/^	struct in6_addr link_address;$/;"	m	struct:dhcpv6_relay_header	typeref:struct:dhcpv6_relay_header::in6_addr
+mac	src/dhcpv6.h	/^	uint8_t mac[6];$/;"	m	struct:dhcpv6_assignment
+mac	src/odhcpd.h	/^	struct ether_addr mac;$/;"	m	struct:lease	typeref:struct:lease::ether_addr
+main	src/odhcpd.c	/^int main()$/;"	f
+main_object	src/ubus.c	/^static struct ubus_object main_object = {$/;"	v	typeref:struct:ubus_object	file:
+main_object_methods	src/ubus.c	/^static struct ubus_method main_object_methods[] = {$/;"	v	typeref:struct:ubus_method	file:
+main_object_type	src/ubus.c	/^static struct ubus_object_type main_object_type =$/;"	v	typeref:struct:ubus_object_type	file:
+managed	src/dhcpv6.h	/^	struct odhcpd_ipaddr *managed;$/;"	m	struct:dhcpv6_assignment	typeref:struct:dhcpv6_assignment::odhcpd_ipaddr
+managed	src/odhcpd.h	/^	int managed;$/;"	m	struct:interface
+managed_handle_pd_data	src/dhcpv6-ia.c	/^static void managed_handle_pd_data(struct ustream *s, _unused int bytes_new)$/;"	f	file:	signature:(struct ustream *s, _unused int bytes_new)
+managed_handle_pd_done	src/dhcpv6-ia.c	/^static void managed_handle_pd_done(struct ustream *s)$/;"	f	file:	signature:(struct ustream *s)
+managed_size	src/dhcpv6.h	/^	ssize_t managed_size;$/;"	m	struct:dhcpv6_assignment
+managed_sock	src/dhcpv6.h	/^	struct ustream_fd managed_sock;$/;"	m	struct:dhcpv6_assignment	typeref:struct:dhcpv6_assignment::ustream_fd
+master	src/odhcpd.h	/^	bool master;$/;"	m	struct:interface
+modify_neighbor	src/ndp.c	/^static void modify_neighbor(struct in6_addr *addr, struct interface *iface,$/;"	p	file:	signature:(struct in6_addr *addr, struct interface *iface, bool add)
+modify_neighbor	src/ndp.c	/^static void modify_neighbor(struct in6_addr *addr,$/;"	f	file:	signature:(struct in6_addr *addr, struct interface *iface, bool add)
+msg_type	src/dhcpv6.h	/^	uint8_t msg_type;$/;"	m	struct:dhcpv6_client_header
+msg_type	src/dhcpv6.h	/^	uint8_t msg_type;$/;"	m	struct:dhcpv6_relay_forward_envelope
+msg_type	src/dhcpv6.h	/^	uint8_t msg_type;$/;"	m	struct:dhcpv6_relay_header
+name	src/odhcpd.h	/^	char name[IF_NAMESIZE];$/;"	m	struct:interface
+ndp	src/odhcpd.h	/^	enum odhcpd_mode ndp;$/;"	m	struct:interface	typeref:enum:interface::odhcpd_mode
+ndp_event	src/ndp.c	/^static struct odhcpd_event ndp_event = {{.fd = -1}, handle_solicit};$/;"	v	typeref:struct:odhcpd_event	file:
+ndp_neighbor	src/ndp.h	/^struct ndp_neighbor {$/;"	s
+neighbor_count	src/ndp.c	/^static size_t neighbor_count = 0;$/;"	v	file:
+neighbors	src/ndp.c	/^static struct list_head neighbors = LIST_HEAD_INIT(neighbors);$/;"	v	typeref:struct:list_head	file:
+netifd	src/ubus.c	/^static struct ubus_subscriber netifd;$/;"	v	typeref:struct:ubus_subscriber	file:
+no_dynamic_dhcp	src/odhcpd.h	/^	bool no_dynamic_dhcp;$/;"	m	struct:interface
+obj_attrs	src/ubus.c	/^static const struct blobmsg_policy obj_attrs[OBJ_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+objid	src/ubus.c	/^static uint32_t objid = 0;$/;"	v	file:
+odhcpd_attr_list	src/config.c	/^const struct uci_blob_param_list odhcpd_attr_list = {$/;"	v	typeref:struct:uci_blob_param_list
+odhcpd_attrs	src/config.c	/^static const struct blobmsg_policy odhcpd_attrs[LEASE_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+odhcpd_bmemcmp	src/odhcpd.c	/^int odhcpd_bmemcmp(const void *av, const void *bv, size_t bits)$/;"	f	signature:(const void *av, const void *bv, size_t bits)
+odhcpd_bmemcmp	src/odhcpd.h	/^int odhcpd_bmemcmp(const void *av, const void *bv, size_t bits);$/;"	p	signature:(const void *av, const void *bv, size_t bits)
+odhcpd_bmemcpy	src/odhcpd.c	/^void odhcpd_bmemcpy(void *av, const void *bv, size_t bits)$/;"	f	signature:(void *av, const void *bv, size_t bits)
+odhcpd_bmemcpy	src/odhcpd.h	/^void odhcpd_bmemcpy(void *av, const void *bv, size_t bits);$/;"	p	signature:(void *av, const void *bv, size_t bits)
+odhcpd_event	src/odhcpd.h	/^struct odhcpd_event {$/;"	s
+odhcpd_get_interface_addresses	src/odhcpd.c	/^ssize_t odhcpd_get_interface_addresses(int ifindex,$/;"	f	signature:(int ifindex, struct odhcpd_ipaddr *addrs, size_t cnt)
+odhcpd_get_interface_addresses	src/odhcpd.h	/^ssize_t odhcpd_get_interface_addresses(int ifindex,$/;"	p	signature:(int ifindex, struct odhcpd_ipaddr *addrs, size_t cnt)
+odhcpd_get_interface_by_index	src/odhcpd.c	/^struct interface* odhcpd_get_interface_by_index(int ifindex)$/;"	f	signature:(int ifindex)
+odhcpd_get_interface_by_index	src/odhcpd.h	/^struct interface* odhcpd_get_interface_by_index(int ifindex);$/;"	p	signature:(int ifindex)
+odhcpd_get_interface_by_name	src/odhcpd.c	/^struct interface* odhcpd_get_interface_by_name(const char *name)$/;"	f	signature:(const char *name)
+odhcpd_get_interface_by_name	src/odhcpd.h	/^struct interface* odhcpd_get_interface_by_name(const char *name);$/;"	p	signature:(const char *name)
+odhcpd_get_interface_mtu	src/odhcpd.c	/^int odhcpd_get_interface_mtu(const char *ifname)$/;"	f	signature:(const char *ifname)
+odhcpd_get_interface_mtu	src/odhcpd.h	/^int odhcpd_get_interface_mtu(const char *ifname);$/;"	p	signature:(const char *ifname)
+odhcpd_get_mac	src/odhcpd.c	/^int odhcpd_get_mac(const struct interface *iface, uint8_t mac[6])$/;"	f	signature:(const struct interface *iface, uint8_t mac[6])
+odhcpd_get_mac	src/odhcpd.h	/^int odhcpd_get_mac(const struct interface *iface, uint8_t mac[6]);$/;"	p	signature:(const struct interface *iface, uint8_t mac[6])
+odhcpd_get_master_interface	src/odhcpd.c	/^struct interface* odhcpd_get_master_interface(void)$/;"	f	signature:(void)
+odhcpd_get_master_interface	src/odhcpd.h	/^struct interface* odhcpd_get_master_interface(void);$/;"	p	signature:(void)
+odhcpd_hexlify	src/odhcpd.c	/^void odhcpd_hexlify(char *dst, const uint8_t *src, size_t len)$/;"	f	signature:(char *dst, const uint8_t *src, size_t len)
+odhcpd_hexlify	src/odhcpd.h	/^void odhcpd_hexlify(char *dst, const uint8_t *src, size_t len);$/;"	p	signature:(char *dst, const uint8_t *src, size_t len)
+odhcpd_ipaddr	src/odhcpd.h	/^struct odhcpd_ipaddr {$/;"	s
+odhcpd_mode	src/odhcpd.h	/^enum odhcpd_mode {$/;"	g
+odhcpd_open_rtnl	src/odhcpd.c	/^int odhcpd_open_rtnl(void)$/;"	f	signature:(void)
+odhcpd_open_rtnl	src/odhcpd.h	/^int odhcpd_open_rtnl(void);$/;"	p	signature:(void)
+odhcpd_receive_packets	src/odhcpd.c	/^static void odhcpd_receive_packets(struct uloop_fd *u, _unused unsigned int events)$/;"	f	file:	signature:(struct uloop_fd *u, _unused unsigned int events)
+odhcpd_register	src/odhcpd.c	/^int odhcpd_register(struct odhcpd_event *event)$/;"	f	signature:(struct odhcpd_event *event)
+odhcpd_register	src/odhcpd.h	/^int odhcpd_register(struct odhcpd_event *event);$/;"	p	signature:(struct odhcpd_event *event)
+odhcpd_reload	src/config.c	/^void odhcpd_reload(void)$/;"	f	signature:(void)
+odhcpd_reload	src/odhcpd.h	/^void odhcpd_reload(void);$/;"	p	signature:(void)
+odhcpd_run	src/config.c	/^void odhcpd_run(void)$/;"	f	signature:(void)
+odhcpd_run	src/odhcpd.h	/^void odhcpd_run(void);$/;"	p	signature:(void)
+odhcpd_send	src/odhcpd.c	/^ssize_t odhcpd_send(int socket, struct sockaddr_in6 *dest,$/;"	f	signature:(int socket, struct sockaddr_in6 *dest, struct iovec *iov, size_t iov_len, const struct interface *iface)
+odhcpd_send	src/odhcpd.h	/^ssize_t odhcpd_send(int socket, struct sockaddr_in6 *dest,$/;"	p	signature:(int socket, struct sockaddr_in6 *dest, struct iovec *iov, size_t iov_len, const struct interface *iface)
+odhcpd_setup_route	src/ndp.c	/^void odhcpd_setup_route(const struct in6_addr *addr, int prefixlen,$/;"	f	signature:(const struct in6_addr *addr, int prefixlen, const struct interface *iface, const struct in6_addr *gw, bool add)
+odhcpd_setup_route	src/odhcpd.h	/^void odhcpd_setup_route(const struct in6_addr *addr, int prefixlen,$/;"	p	signature:(const struct in6_addr *addr, int prefixlen, const struct interface *iface, const struct in6_addr *gw, bool add)
+odhcpd_time	src/odhcpd.c	/^time_t odhcpd_time(void)$/;"	f	signature:(void)
+odhcpd_time	src/odhcpd.h	/^time_t odhcpd_time(void);$/;"	p	signature:(void)
+odhcpd_unhexlify	src/odhcpd.c	/^ssize_t odhcpd_unhexlify(uint8_t *dst, size_t len, const char *src)$/;"	f	signature:(uint8_t *dst, size_t len, const char *src)
+odhcpd_unhexlify	src/odhcpd.h	/^ssize_t odhcpd_unhexlify(uint8_t *dst, size_t len, const char *src);$/;"	p	signature:(uint8_t *dst, size_t len, const char *src)
+odhcpd_urandom	src/odhcpd.c	/^void odhcpd_urandom(void *data, size_t len)$/;"	f	signature:(void *data, size_t len)
+odhcpd_urandom	src/odhcpd.h	/^void odhcpd_urandom(void *data, size_t len);$/;"	p	signature:(void *data, size_t len)
+op	src/dhcpv4.h	/^	uint8_t op;$/;"	m	struct:dhcpv4_message
+options	src/dhcpv4.h	/^	uint8_t options[312];$/;"	m	struct:dhcpv4_message
+options	src/dhcpv6.h	/^	uint8_t options[];$/;"	m	struct:dhcpv6_relay_header
+parse_mode	src/config.c	/^static int parse_mode(const char *mode)$/;"	f	file:	signature:(const char *mode)
+parse_routes	src/router.c	/^static bool parse_routes(struct odhcpd_ipaddr *n, ssize_t len)$/;"	f	file:	signature:(struct odhcpd_ipaddr *n, ssize_t len)
+peer	src/dhcpv6.h	/^	struct sockaddr_in6 peer;$/;"	m	struct:dhcpv6_assignment	typeref:struct:dhcpv6_assignment::sockaddr_in6
+peer_address	src/dhcpv6.h	/^	struct in6_addr peer_address;$/;"	m	struct:dhcpv6_relay_forward_envelope	typeref:struct:dhcpv6_relay_forward_envelope::in6_addr
+peer_address	src/dhcpv6.h	/^	struct in6_addr peer_address;$/;"	m	struct:dhcpv6_relay_header	typeref:struct:dhcpv6_relay_header::in6_addr
+ping6	src/ndp.c	/^static ssize_t ping6(struct in6_addr *addr,$/;"	f	file:	signature:(struct in6_addr *addr, const struct interface *iface)
+ping6	src/ndp.c	/^static ssize_t ping6(struct in6_addr *addr,$/;"	p	file:	signature:(struct in6_addr *addr, const struct interface *iface)
+ping_socket	src/ndp.c	/^static int ping_socket = -1;$/;"	v	file:
+preferred	src/dhcpv6.h	/^	uint32_t preferred;$/;"	m	struct:dhcpv6_ia_addr
+preferred	src/dhcpv6.h	/^	uint32_t preferred;$/;"	m	struct:dhcpv6_ia_prefix
+preferred	src/odhcpd.h	/^	uint32_t preferred;$/;"	m	struct:odhcpd_ipaddr
+prefix	src/dhcpv6.h	/^	uint8_t prefix;$/;"	m	struct:dhcpv6_ia_prefix
+prefix	src/odhcpd.h	/^	uint8_t prefix;$/;"	m	struct:odhcpd_ipaddr
+prefixcmp	src/dhcpv6-ia.c	/^static int prefixcmp(const void *va, const void *vb)$/;"	f	file:	signature:(const void *va, const void *vb)
+protocol	src/dhcpv6.h	/^	uint8_t protocol;$/;"	m	struct:dhcpv6_auth_reconfigure
+ra	src/odhcpd.h	/^	enum odhcpd_mode ra;$/;"	m	struct:interface	typeref:enum:interface::odhcpd_mode
+ra_not_onlink	src/odhcpd.h	/^	bool ra_not_onlink;$/;"	m	struct:interface
+rdm	src/dhcpv6.h	/^	uint8_t rdm;$/;"	m	struct:dhcpv6_auth_reconfigure
+reconf_cnt	src/dhcpv6.h	/^	int reconf_cnt;$/;"	m	struct:dhcpv6_assignment
+reconf_event	src/dhcpv6-ia.c	/^static struct uloop_timeout reconf_event = {.cb = reconf_timer};$/;"	v	typeref:struct:uloop_timeout	file:
+reconf_sent	src/dhcpv6.h	/^	time_t reconf_sent;$/;"	m	struct:dhcpv6_assignment
+reconf_timer	src/dhcpv6-ia.c	/^static void reconf_timer(struct uloop_timeout *event)$/;"	f	file:	signature:(struct uloop_timeout *event)
+reconf_timer	src/dhcpv6-ia.c	/^static void reconf_timer(struct uloop_timeout *event);$/;"	p	file:	signature:(struct uloop_timeout *event)
+reconf_type	src/dhcpv6.h	/^	uint8_t reconf_type;$/;"	m	struct:dhcpv6_auth_reconfigure
+relay_client_request	src/dhcpv6.c	/^static void relay_client_request(struct sockaddr_in6 *source,$/;"	f	file:	signature:(struct sockaddr_in6 *source, const void *data, size_t len, struct interface *iface)
+relay_client_request	src/dhcpv6.c	/^static void relay_client_request(struct sockaddr_in6 *source,$/;"	p	file:	signature:(struct sockaddr_in6 *source, const void *data, size_t len, struct interface *iface)
+relay_message_len	src/dhcpv6.h	/^	uint16_t relay_message_len;$/;"	m	struct:dhcpv6_relay_forward_envelope
+relay_message_type	src/dhcpv6.h	/^	uint16_t relay_message_type;$/;"	m	struct:dhcpv6_relay_forward_envelope
+relay_server_response	src/dhcpv6.c	/^static void relay_server_response(uint8_t *data, size_t len)$/;"	f	file:	signature:(uint8_t *data, size_t len)
+relay_server_response	src/dhcpv6.c	/^static void relay_server_response(uint8_t *data, size_t len);$/;"	p	file:	signature:(uint8_t *data, size_t len)
+reload_cb	src/config.c	/^static void reload_cb(struct uloop_fd *u, _unused unsigned int events)$/;"	f	file:	signature:(struct uloop_fd *u, _unused unsigned int events)
+reload_fd	src/config.c	/^static struct uloop_fd reload_fd = { .cb = reload_cb };$/;"	v	typeref:struct:uloop_fd	file:
+reload_pipe	src/config.c	/^static int reload_pipe[2];$/;"	v	file:
+replay	src/dhcpv6.h	/^	uint32_t replay[2];$/;"	m	struct:dhcpv6_auth_reconfigure
+req_dump	src/ubus.c	/^static struct ubus_request req_dump = { .list = LIST_HEAD_INIT(req_dump.list) };$/;"	v	typeref:struct:ubus_request	file:
+reserved	src/dhcpv6.h	/^	uint16_t reserved;$/;"	m	struct:dhcpv6_cer_id
+route_preference	src/odhcpd.h	/^	int route_preference;$/;"	m	struct:interface
+router_event	src/router.c	/^static struct odhcpd_event router_event = {{.fd = -1}, handle_icmpv6};$/;"	v	typeref:struct:odhcpd_event	file:
+router_icmpv6_valid	src/router.c	/^static bool router_icmpv6_valid(struct sockaddr_in6 *source, uint8_t *data, size_t len)$/;"	f	file:	signature:(struct sockaddr_in6 *source, uint8_t *data, size_t len)
+rtnl_event	src/ndp.c	/^static struct odhcpd_event rtnl_event = {{.fd = -1}, handle_rtnetlink};$/;"	v	typeref:struct:odhcpd_event	file:
+rtnl_seq	src/odhcpd.c	/^static int rtnl_seq = 0;$/;"	v	file:
+rtnl_seqid	src/ndp.c	/^static uint32_t rtnl_seqid = 0;$/;"	v	file:
+rtnl_socket	src/odhcpd.c	/^static int rtnl_socket = -1;$/;"	v	file:
+search	src/odhcpd.h	/^	uint8_t *search;$/;"	m	struct:interface
+search_len	src/odhcpd.h	/^	size_t search_len;$/;"	m	struct:interface
+secs	src/dhcpv4.h	/^	uint16_t secs;$/;"	m	struct:dhcpv4_message
+send_reconf	src/dhcpv6-ia.c	/^static int send_reconf(struct interface *iface, struct dhcpv6_assignment *assign)$/;"	f	file:	signature:(struct interface *iface, struct dhcpv6_assignment *assign)
+send_router_advert	src/router.c	/^static void send_router_advert(struct uloop_timeout *event)$/;"	f	file:	signature:(struct uloop_timeout *event)
+send_router_advert	src/router.c	/^static void send_router_advert(struct uloop_timeout *event);$/;"	p	file:	signature:(struct uloop_timeout *event)
+serial	src/dhcpv6-ia.c	/^static uint32_t serial = 0;$/;"	v	file:
+set_config	src/config.c	/^static void set_config(struct uci_section *s)$/;"	f	file:	signature:(struct uci_section *s)
+set_interface	src/config.c	/^static int set_interface(struct uci_section *s)$/;"	f	file:	signature:(struct uci_section *s)
+set_lease	src/config.c	/^static int set_lease(struct uci_section *s)$/;"	f	file:	signature:(struct uci_section *s)
+setup_dhcpv4_interface	src/dhcpv4.c	/^int setup_dhcpv4_interface(struct interface *iface, bool enable)$/;"	f	signature:(struct interface *iface, bool enable)
+setup_dhcpv4_interface	src/odhcpd.h	/^int setup_dhcpv4_interface(struct interface *iface, bool enable);$/;"	p	signature:(struct interface *iface, bool enable)
+setup_dhcpv6_ia_interface	src/dhcpv6-ia.c	/^int setup_dhcpv6_ia_interface(struct interface *iface, bool enable)$/;"	f	signature:(struct interface *iface, bool enable)
+setup_dhcpv6_ia_interface	src/dhcpv6.h	/^int setup_dhcpv6_ia_interface(struct interface *iface, bool enable);$/;"	p	signature:(struct interface *iface, bool enable)
+setup_dhcpv6_interface	src/dhcpv6.c	/^int setup_dhcpv6_interface(struct interface *iface, bool enable)$/;"	f	signature:(struct interface *iface, bool enable)
+setup_dhcpv6_interface	src/odhcpd.h	/^int setup_dhcpv6_interface(struct interface *iface, bool enable);$/;"	p	signature:(struct interface *iface, bool enable)
+setup_ndp_interface	src/ndp.c	/^int setup_ndp_interface(struct interface *iface, bool enable)$/;"	f	signature:(struct interface *iface, bool enable)
+setup_ndp_interface	src/odhcpd.h	/^int setup_ndp_interface(struct interface *iface, bool enable);$/;"	p	signature:(struct interface *iface, bool enable)
+setup_route	src/ndp.c	/^static void setup_route(struct in6_addr *addr, struct interface *iface,$/;"	f	file:	signature:(struct in6_addr *addr, struct interface *iface, bool add)
+setup_router_interface	src/odhcpd.h	/^int setup_router_interface(struct interface *iface, bool enable);$/;"	p	signature:(struct interface *iface, bool enable)
+setup_router_interface	src/router.c	/^int setup_router_interface(struct interface *iface, bool enable)$/;"	f	signature:(struct interface *iface, bool enable)
+siaddr	src/dhcpv4.h	/^	struct in_addr siaddr;$/;"	m	struct:dhcpv4_message	typeref:struct:dhcpv4_message::in_addr
+sigusr1_refresh	src/router.c	/^static void sigusr1_refresh(_unused int signal)$/;"	f	file:	signature:(_unused int signal)
+sigusr1_refresh	src/router.c	/^static void sigusr1_refresh(int signal);$/;"	p	file:	signature:(int signal)
+sname	src/dhcpv4.h	/^	char sname[64];$/;"	m	struct:dhcpv4_message
+statemd5	src/dhcpv6-ia.c	/^static uint8_t statemd5[16];$/;"	v	file:
+static_ndp	src/odhcpd.h	/^	char* static_ndp;$/;"	m	struct:interface
+static_ndp_len	src/odhcpd.h	/^	size_t static_ndp_len;$/;"	m	struct:interface
+t1	src/dhcpv6.h	/^	uint32_t t1;$/;"	m	struct:dhcpv6_ia_hdr
+t2	src/dhcpv6.h	/^	uint32_t t2;$/;"	m	struct:dhcpv6_ia_hdr
+timeout	src/ndp.h	/^	time_t timeout;$/;"	m	struct:ndp_neighbor
+timer_rs	src/odhcpd.h	/^	struct uloop_timeout timer_rs;$/;"	m	struct:interface	typeref:struct:interface::uloop_timeout
+transaction_id	src/dhcpv6.h	/^	uint8_t transaction_id[3];$/;"	m	struct:dhcpv6_client_header
+type	src/dhcpv4.h	/^	uint8_t type;$/;"	m	struct:dhcpv4_option
+type	src/dhcpv6.h	/^	uint16_t type;$/;"	m	struct:dhcpv6_auth_reconfigure
+type	src/dhcpv6.h	/^	uint16_t type;$/;"	m	struct:dhcpv6_cer_id
+type	src/dhcpv6.h	/^	uint16_t type;$/;"	m	struct:dhcpv6_ia_addr
+type	src/dhcpv6.h	/^	uint16_t type;$/;"	m	struct:dhcpv6_ia_hdr
+type	src/dhcpv6.h	/^	uint16_t type;$/;"	m	struct:dhcpv6_ia_prefix
+type	src/router.h	/^	uint8_t type;$/;"	m	struct:icmpv6_opt
+typeof	src/odhcpd.h	26;"	d
+ubus	src/ubus.c	/^static struct ubus_context *ubus = NULL;$/;"	v	typeref:struct:ubus_context	file:
+ubus_apply_network	src/odhcpd.h	/^void ubus_apply_network(void);$/;"	p	signature:(void)
+ubus_apply_network	src/ubus.c	/^void ubus_apply_network(void)$/;"	f	signature:(void)
+ubus_get_class	src/odhcpd.h	/^bool ubus_get_class(const char *ifname, const struct in6_addr *addr, uint16_t *pclass);$/;"	p	signature:(const char *ifname, const struct in6_addr *addr, uint16_t *pclass)
+ubus_get_class	src/ubus.c	/^bool ubus_get_class(const char *ifname, const struct in6_addr *addr, uint16_t *pclass)$/;"	f	signature:(const char *ifname, const struct in6_addr *addr, uint16_t *pclass)
+ubus_get_ifname	src/odhcpd.h	/^const char* ubus_get_ifname(const char *name);$/;"	p	signature:(const char *name)
+ubus_get_ifname	src/ubus.c	/^const char* ubus_get_ifname(const char *name)$/;"	f	signature:(const char *name)
+ubus_has_prefix	src/odhcpd.h	/^bool ubus_has_prefix(const char *name, const char *ifname);$/;"	p	signature:(const char *name, const char *ifname)
+ubus_has_prefix	src/ubus.c	/^bool ubus_has_prefix(const char *name, const char *ifname)$/;"	f	signature:(const char *name, const char *ifname)
+uloop	src/odhcpd.h	/^	struct uloop_fd uloop;$/;"	m	struct:odhcpd_event	typeref:struct:odhcpd_event::uloop_fd
+update	src/dhcpv6-ia.c	/^static void update(struct interface *iface)$/;"	f	file:	signature:(struct interface *iface)
+update	src/dhcpv6-ia.c	/^static void update(struct interface *iface);$/;"	p	file:	signature:(struct interface *iface)
+update_nested_message	src/dhcpv6.c	/^static void update_nested_message(uint8_t *data, size_t len, ssize_t pdiff)$/;"	f	file:	signature:(uint8_t *data, size_t len, ssize_t pdiff)
+update_netifd	src/ubus.c	/^static void update_netifd(bool subscribe)$/;"	f	file:	signature:(bool subscribe)
+upstream	src/odhcpd.h	/^	char *upstream;$/;"	m	struct:interface
+upstream_len	src/odhcpd.h	/^	size_t upstream_len;$/;"	m	struct:interface
+urandom_fd	src/odhcpd.c	/^static int urandom_fd = -1;$/;"	v	file:
+valid	src/dhcpv6.h	/^	uint32_t valid;$/;"	m	struct:dhcpv6_ia_addr
+valid	src/dhcpv6.h	/^	uint32_t valid;$/;"	m	struct:dhcpv6_ia_prefix
+valid	src/odhcpd.h	/^	uint32_t valid;$/;"	m	struct:odhcpd_ipaddr
+valid_until	src/dhcpv4.h	/^	time_t valid_until;$/;"	m	struct:dhcpv4_assignment
+valid_until	src/dhcpv6.h	/^	time_t valid_until;$/;"	m	struct:dhcpv6_assignment
+xid	src/dhcpv4.h	/^	uint32_t xid;$/;"	m	struct:dhcpv4_message
+yiaddr	src/dhcpv4.h	/^	struct in_addr yiaddr;$/;"	m	struct:dhcpv4_message	typeref:struct:dhcpv4_message::in_addr
