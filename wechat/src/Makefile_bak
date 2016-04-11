@@ -1,0 +1,9 @@
+all:wechat
+wechat:main.c wechat_log.c libwxcloud.a 
+	$(CC) $(LDFALGS) $(CFLAGS)  $^ -o $@ -luci -lubus -lubox -lblobmsg_json -lpthread -lrt
+
+clean: 
+	rm -rf wechat
+
+.PHONY: all clean
+
