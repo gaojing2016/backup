@@ -1,0 +1,2233 @@
+cscope 15 $HOME/Desktop/study/ubus_example -q 0000000194 0000012138
+	@/home/gaojing/Desktop/study/ubus_example/src/client.c
+
+14 
+	~<sys/time.h
+>
+
+15 
+	~<uni°d.h
+>
+
+17 
+	~<libubox/u°ªam.h
+>
+
+19 
+	~<libubus.h
+>
+
+20 
+	~"cou¡.h
+"
+
+22 
+ubus_c⁄ãxt
+ *
+	g˘x
+;
+
+23 
+blob_buf
+ 
+	gb
+;
+
+25 
+	$ã°_˛õ¡_subs¸ibe_cb
+(
+ubus_c⁄ãxt
+ *
+˘x
+, 
+ubus_obje˘
+ *
+obj
+)
+
+27 
+	`Ârötf
+(
+°dîr
+, "Subs¸ibî†a˘ive: %d\n", 
+obj
+->
+has_subs¸ibîs
+);
+
+28 
+	}
+}
+
+30 
+ubus_obje˘
+ 
+	gã°_˛õ¡_obje˘
+ = {
+
+31 .
+subs¸ibe_cb
+ = 
+ã°_˛õ¡_subs¸ibe_cb
+,
+
+34 
+	$ã°_˛õ¡_nŸify_cb
+(
+ulo›_timeout
+ *
+timeout
+)
+
+36 
+cou¡î
+ = 0;
+
+37 
+îr
+;
+
+38 
+timevÆ
+ 
+tv1
+, 
+tv2
+;
+
+39 
+max
+ = 1000;
+
+40 
+dñè
+;
+
+41 
+i
+ = 0;
+
+43 
+	`blob_buf_öô
+(&
+b
+, 0);
+
+44 
+	`blobmsg_add_u32
+(&
+b
+, "cou¡î", 
+cou¡î
+++);
+
+46 
+	`gëtimeofday
+(&
+tv1
+, 
+NULL
+);
+
+47 
+i
+ = 0; i < 
+max
+; i++)
+
+48 
+îr
+ = 
+	`ubus_nŸify
+(
+˘x
+, &
+ã°_˛õ¡_obje˘
+, "pög", 
+b
+.
+hód
+, 1000);
+
+49 
+	`gëtimeofday
+(&
+tv2
+, 
+NULL
+);
+
+50 i‡(
+îr
+)
+
+51 
+	`Ârötf
+(
+°dîr
+, "NŸify faûed: %s\n", 
+	`ubus_°ªº‹
+(
+îr
+));
+
+53 
+dñè
+ = (
+tv2
+.
+tv_£c
+ - 
+tv1
+.tv_£cË* 1000000 + (tv2.
+tv_u£c
+ -Åv1.tv_usec);
+
+54 
+	`Ârötf
+(
+°dîr
+, "AvgÅimê≥∏ôî©i⁄: %ld u£c\n", 
+dñè
+ / 
+max
+);
+
+56 
+	`ulo›_timeout_£t
+(
+timeout
+, 1000);
+
+57 
+	}
+}
+
+60 
+	mRETURN_CODE
+,
+
+61 
+	m__RETURN_MAX
+,
+
+64 c⁄° 
+blobmsg_pﬁicy
+ 
+	gªtu∫_pﬁicy
+[
+__RETURN_MAX
+] = {
+
+65 [
+RETURN_CODE
+] = { .
+«me
+ = "rc", .
+	gty≥
+ = 
+BLOBMSG_TYPE_INT32
+ },
+
+68 
+	$ã°_cou¡_d©a_cb
+(
+ubus_ªque°
+ *
+ªq
+,
+
+69 
+ty≥
+, 
+blob_©å
+ *
+msg
+)
+
+71 
+blob_©å
+ *
+tb
+[
+__RETURN_MAX
+];
+
+72 
+rc
+;
+
+73 
+uöt32_t
+ 
+cou¡_to
+ = *(uöt32_à*)
+ªq
+->
+¥iv
+;
+
+75 
+	`blobmsg_∑r£
+(
+ªtu∫_pﬁicy
+, 
+__RETURN_MAX
+, 
+tb
+, 
+	`blob_d©a
+(
+msg
+), 
+	`blob_Àn
+(msg));
+
+77 i‡(!
+tb
+[
+RETURN_CODE
+]) {
+
+78 
+	`Ârötf
+(
+°dîr
+, "NoÑeturn codeÑeceived from server\n");
+
+81 
+rc
+ = 
+	`blobmsg_gë_u32
+(
+tb
+[
+RETURN_CODE
+]);
+
+82 i‡(
+rc
+)
+
+83 
+	`Ârötf
+(
+°dîr
+, "C‹ru±i⁄ o‡d©®wôh cou¡ u∞tÿ'%u'\n", 
+cou¡_to
+);
+
+85 
+	`Ârötf
+(
+°dîr
+, "Sîvî vÆid©ed ou∏cou¡ u∞tÿ'%u'\n", 
+cou¡_to
+);
+
+86 
+	}
+}
+
+88 
+	$ã°_cou¡
+(
+ulo›_timeout
+ *
+timeout
+)
+
+91 
+COUNT_TO_MIN
+ = 10000,
+
+92 
+COUNT_TO_MAX
+ = 1000000,
+
+93 
+PROGRESSION
+ = 100,
+
+96 
+uöt32_t
+ 
+id
+;
+
+97 
+uöt32_t
+ 
+cou¡_to
+ = 100000;
+
+98 
+cou¡_¥ogªssi⁄
+ = 
+PROGRESSION
+;
+
+99 *
+s
+;
+
+101 i‡(
+cou¡_to
+ <
+COUNT_TO_MIN
+)
+
+102 
+cou¡_¥ogªssi⁄
+ = 
+PROGRESSION
+;
+
+103 i‡(
+cou¡_to
+ >
+COUNT_TO_MAX
+)
+
+104 
+cou¡_¥ogªssi⁄
+ = -
+PROGRESSION
+;
+
+106 
+cou¡_to
+ +
+cou¡_¥ogªssi⁄
+;
+
+108 
+s
+ = 
+	`cou¡_to_numbî
+(
+cou¡_to
+);
+
+109 i‡(!
+s
+)
+
+110 
+	`Ârötf
+(
+°dîr
+, "CouldÇŸáŒoˇã mem‹yÅÿcou¡ u∞tÿ'%u'\n", 
+cou¡_to
+);
+
+112 
+	`Ârötf
+(
+°dîr
+, "Sending count upÅo '%u'; string hasÜength '%u'\n",
+
+113 
+cou¡_to
+, (
+uöt32_t
+)
+	`°æí
+(
+s
+));
+
+114 
+	`blob_buf_öô
+(&
+b
+, 0);
+
+115 
+	`blobmsg_add_u32
+(&
+b
+, "to", 
+cou¡_to
+);
+
+116 
+	`blobmsg_add_°rög
+(&
+b
+, "°rög", 
+s
+);
+
+118 i‡(
+	`ubus_lookup_id
+(
+˘x
+, "ã°", &
+id
+)) {
+
+119 
+	`Ârötf
+(
+°dîr
+, "FailedÅoÜook upÅest object\n");
+
+123 
+	`ubus_övoke
+(
+˘x
+, 
+id
+, "cou¡", 
+b
+.
+hód
+, 
+ã°_cou¡_d©a_cb
+, &
+cou¡_to
+, 5000);
+
+125 
+	`‰ì
+(
+s
+);
+
+127 
+	`ulo›_timeout_£t
+(
+timeout
+, 2000);
+
+128 
+	}
+}
+
+130 
+ulo›_timeout
+ 
+	gnŸify_timî
+ = {
+
+131 .
+cb
+ = 
+ã°_˛õ¡_nŸify_cb
+,
+
+134 
+ulo›_timeout
+ 
+	gcou¡_timî
+ = {
+
+135 .
+cb
+ = 
+ã°_cou¡
+,
+
+138 
+	$ã°_˛õ¡_fd_d©a_cb
+(
+u°ªam
+ *
+s
+, 
+byãs
+)
+
+140 *
+d©a
+, *
+£p
+;
+
+141 
+Àn
+;
+
+143 
+d©a
+ = 
+	`u°ªam_gë_ªad_buf
+(
+s
+, &
+Àn
+);
+
+144 i‡(
+Àn
+ < 1)
+
+147 
+£p
+ = 
+	`°rchr
+(
+d©a
+, '\n');
+
+148 i‡(!
+£p
+)
+
+151 *
+£p
+ = 0;
+
+152 
+	`Ârötf
+(
+°dîr
+, "GŸÜöe: %s\n", 
+d©a
+);
+
+153 
+	`u°ªam_c⁄sume
+(
+s
+, 
+£p
+ + 1 - 
+d©a
+);
+
+154 
+	}
+}
+
+156 
+	$ã°_˛õ¡_fd_cb
+(
+ubus_ªque°
+ *
+ªq
+, 
+fd
+)
+
+158 
+u°ªam_fd
+ 
+ã°_fd
+;
+
+160 
+	`Ârötf
+(
+°dîr
+, "Got fd fromÅhe server, watching...\n");
+
+162 
+ã°_fd
+.
+°ªam
+.
+nŸify_ªad
+ = 
+ã°_˛õ¡_fd_d©a_cb
+;
+
+163 
+	`u°ªam_fd_öô
+(&
+ã°_fd
+, 
+fd
+);
+
+164 
+	}
+}
+
+166 
+	$ã°_˛õ¡_com∂ëe_cb
+(
+ubus_ªque°
+ *
+ªq
+, 
+ªt
+)
+
+168 
+	`Ârötf
+(
+°dîr
+, "com∂ëedÑeque°,Ñë: %d\n", 
+ªt
+);
+
+169 
+	}
+}
+
+171 
+	$˛õ¡_maö
+()
+
+173 
+ubus_ªque°
+ 
+ªq
+;
+
+174 
+uöt32_t
+ 
+id
+;
+
+175 
+ªt
+;
+
+177 
+ªt
+ = 
+	`ubus_add_obje˘
+(
+˘x
+, &
+ã°_˛õ¡_obje˘
+);
+
+178 i‡(
+ªt
+) {
+
+179 
+	`Ârötf
+(
+°dîr
+, "FaûedÅÿadd_obje˘ obje˘: %s\n", 
+	`ubus_°ªº‹
+(
+ªt
+));
+
+183 i‡(
+	`ubus_lookup_id
+(
+˘x
+, "ã°", &
+id
+)) {
+
+184 
+	`Ârötf
+(
+°dîr
+, "FailedÅoÜook upÅest object\n");
+
+188 
+	`blob_buf_öô
+(&
+b
+, 0);
+
+189 
+	`blobmsg_add_u32
+(&
+b
+, "id", 
+ã°_˛õ¡_obje˘
+.
+id
+);
+
+190 
+	`ubus_övoke
+(
+˘x
+, 
+id
+, "w©ch", 
+b
+.
+hód
+, 
+NULL
+, 0, 3000);
+
+191 
+	`ã°_˛õ¡_nŸify_cb
+(&
+nŸify_timî
+);
+
+193 
+	`blob_buf_öô
+(&
+b
+, 0);
+
+194 
+	`blobmsg_add_°rög
+(&
+b
+, "msg", "blah");
+
+195 
+	`ubus_övoke_async
+(
+˘x
+, 
+id
+, "hñlo", 
+b
+.
+hód
+, &
+ªq
+);
+
+196 
+ªq
+.
+fd_cb
+ = 
+ã°_˛õ¡_fd_cb
+;
+
+197 
+ªq
+.
+com∂ëe_cb
+ = 
+ã°_˛õ¡_com∂ëe_cb
+;
+
+198 
+	`ubus_com∂ëe_ªque°_async
+(
+˘x
+, &
+ªq
+);
+
+200 
+	`ulo›_timeout_£t
+(&
+cou¡_timî
+, 2000);
+
+202 
+	`ulo›_run
+();
+
+203 
+	}
+}
+
+205 
+	$maö
+(
+¨gc
+, **
+¨gv
+)
+
+207 c⁄° *
+ubus_sockë
+ = 
+NULL
+;
+
+208 
+ch
+;
+
+210 (
+ch
+ = 
+	`gë›t
+(
+¨gc
+, 
+¨gv
+, "cs:")) != -1) {
+
+211 
+ch
+) {
+
+213 
+ubus_sockë
+ = 
+›èrg
+;
+
+220 
+¨gc
+ -
+›töd
+;
+
+221 
+¨gv
+ +
+›töd
+;
+
+223 
+	`ulo›_öô
+();
+
+225 
+˘x
+ = 
+	`ubus_c⁄√˘
+(
+ubus_sockë
+);
+
+226 i‡(!
+˘x
+) {
+
+227 
+	`Ârötf
+(
+°dîr
+, "FailedÅo connectÅo ubus\n");
+
+231 
+	`ubus_add_ulo›
+(
+˘x
+);
+
+233 
+	`˛õ¡_maö
+();
+
+235 
+	`ubus_‰ì
+(
+˘x
+);
+
+236 
+	`ulo›_d⁄e
+();
+
+239 
+	}
+}
+
+	@/home/gaojing/Desktop/study/ubus_example/src/count.c
+
+14 
+	~<°dio.h
+>
+
+15 
+	~<°döt.h
+>
+
+16 
+	~<°dlib.h
+>
+
+17 
+	~"cou¡.h
+"
+
+19 *
+	$cou¡_to_numbî
+(
+uöt32_t
+ 
+num
+)
+
+21 
+uöt32_t
+ 
+±r
+ = 0, 
+size
+ = 0;
+
+22 
+uöt32_t
+ 
+wrôãn
+ = 0, 
+i
+;
+
+23 
+√w_löe_evîy_n_numbîs
+ = 30;
+
+24 *
+s
+;
+
+26 
+i
+=0; i < 
+num
+; ++i) {
+
+27 
+size
+ +
+	`¢¥ötf
+(
+NULL
+, 0, "%u ", 
+i
+);
+
+28 i‡(
+i
+ > 0 && i % 
+√w_löe_evîy_n_numbîs
+ == 0)
+
+29 
+size
+++;
+
+31 
+size
+++;
+
+33 
+s
+ = 
+	`ˇŒoc
+(
+size
+, ());
+
+34 i‡(!
+s
+)
+
+35 
+out
+;
+
+37 
+i
+=0; i < 
+num
+; ++i) {
+
+38 
+wrôãn
+ = 
+	`•rötf
+(&
+s
+[
+±r
+], "%u ", 
+i
+);
+
+39 
+±r
+ +
+wrôãn
+;
+
+40 i‡(
+i
+ > 0 && i % 
+√w_löe_evîy_n_numbîs
+ == 0) {
+
+41 
+	`•rötf
+(&
+s
+[
+±r
+], "\n");
+
+42 
+±r
+++;
+
+46 
+out
+:
+
+47  
+s
+;
+
+48 
+	}
+}
+
+	@/home/gaojing/Desktop/study/ubus_example/src/count.h
+
+14 #i‚de‡
+__COUNT_H
+
+
+15 
+	#__COUNT_H
+
+
+	)
+
+17 *
+cou¡_to_numbî
+(
+uöt32_t
+ 
+num
+);
+
+	@/home/gaojing/Desktop/study/ubus_example/src/server.c
+
+14 
+	~<uni°d.h
+>
+
+15 
+	~<sig«l.h
+>
+
+17 
+	~<libubox/blobmsg_js⁄.h
+>
+
+18 
+	~<libubus.h
+>
+
+19 
+	~"cou¡.h
+"
+
+21 
+ubus_c⁄ãxt
+ *
+	g˘x
+;
+
+22 
+ubus_subs¸ibî
+ 
+	gã°_evít
+;
+
+23 
+blob_buf
+ 
+	gb
+;
+
+26 
+	mHELLO_ID
+,
+
+27 
+	mHELLO_MSG
+,
+
+28 
+	m__HELLO_MAX
+
+
+31 c⁄° 
+blobmsg_pﬁicy
+ 
+	ghñlo_pﬁicy
+[] = {
+
+32 [
+HELLO_ID
+] = { .
+«me
+ = "id", .
+	gty≥
+ = 
+BLOBMSG_TYPE_INT32
+ },
+
+33 [
+HELLO_MSG
+] = { .
+«me
+ = "msg", .
+	gty≥
+ = 
+BLOBMSG_TYPE_STRING
+ },
+
+36 
+	shñlo_ªque°
+ {
+
+37 
+ubus_ªque°_d©a
+ 
+	mªq
+;
+
+38 
+ulo›_timeout
+ 
+	mtimeout
+;
+
+39 
+	mfd
+;
+
+40 
+	midx
+;
+
+41 
+	md©a
+[];
+
+44 
+	$ã°_hñlo_fd_ª∂y
+(
+ulo›_timeout
+ *
+t
+)
+
+46 
+hñlo_ªque°
+ *
+ªq
+ = 
+	`c⁄èöî_of
+(
+t
+, hñlo_ªque°, 
+timeout
+);
+
+47 *
+d©a
+;
+
+49 
+d©a
+ = 
+	`Æloˇ
+(
+	`°æí
+(
+ªq
+->data) + 32);
+
+50 
+	`•rötf
+(
+d©a
+, "msg%d: %s\n", ++
+ªq
+->
+idx
+,Ñeq->data);
+
+51 i‡(
+	`wrôe
+(
+ªq
+->
+fd
+, 
+d©a
+, 
+	`°æí
+(data)) < 0) {
+
+52 
+	`˛o£
+(
+ªq
+->
+fd
+);
+
+53 
+	`‰ì
+(
+ªq
+);
+
+57 
+	`ulo›_timeout_£t
+(&
+ªq
+->
+timeout
+, 1000);
+
+58 
+	}
+}
+
+60 
+	$ã°_hñlo_ª∂y
+(
+ulo›_timeout
+ *
+t
+)
+
+62 
+hñlo_ªque°
+ *
+ªq
+ = 
+	`c⁄èöî_of
+(
+t
+, hñlo_ªque°, 
+timeout
+);
+
+63 
+fds
+[2];
+
+65 
+	`blob_buf_öô
+(&
+b
+, 0);
+
+66 
+	`blobmsg_add_°rög
+(&
+b
+, "mesßge", 
+ªq
+->
+d©a
+);
+
+67 
+	`ubus_£nd_ª∂y
+(
+˘x
+, &
+ªq
+->ªq, 
+b
+.
+hód
+);
+
+69 i‡(
+	`pùe
+(
+fds
+) == -1) {
+
+70 
+	`Ârötf
+(
+°dîr
+, "FailedÅo createÖipe\n");
+
+73 
+	`ubus_ªque°_£t_fd
+(
+˘x
+, &
+ªq
+->ªq, 
+fds
+[0]);
+
+74 
+	`ubus_com∂ëe_de„ºed_ªque°
+(
+˘x
+, &
+ªq
+->req, 0);
+
+75 
+ªq
+->
+fd
+ = 
+fds
+[1];
+
+77 
+ªq
+->
+timeout
+.
+cb
+ = 
+ã°_hñlo_fd_ª∂y
+;
+
+78 
+	`ã°_hñlo_fd_ª∂y
+(
+t
+);
+
+79 
+	}
+}
+
+81 
+	$ã°_hñlo
+(
+ubus_c⁄ãxt
+ *
+˘x
+, 
+ubus_obje˘
+ *
+obj
+,
+
+82 
+ubus_ªque°_d©a
+ *
+ªq
+, c⁄° *
+mëhod
+,
+
+83 
+blob_©å
+ *
+msg
+)
+
+85 
+hñlo_ªque°
+ *
+hªq
+;
+
+86 
+blob_©å
+ *
+tb
+[
+__HELLO_MAX
+];
+
+87 c⁄° *
+f‹m©
+ = "%sÑeceivedá message: %s";
+
+88 c⁄° *
+msg°r
+ = "(unknown)";
+
+90 
+	`blobmsg_∑r£
+(
+hñlo_pﬁicy
+, 
+	`ARRAY_SIZE
+(hñlo_pﬁicy), 
+tb
+, 
+	`blob_d©a
+(
+msg
+), 
+	`blob_Àn
+(msg));
+
+92 i‡(
+tb
+[
+HELLO_MSG
+])
+
+93 
+msg°r
+ = 
+	`blobmsg_d©a
+(
+tb
+[
+HELLO_MSG
+]);
+
+95 
+hªq
+ = 
+	`ˇŒoc
+(1, (*hªqË+ 
+	`°æí
+(
+f‹m©
+Ë+ såÀn(
+obj
+->
+«me
+Ë+ såÀn(
+msg°r
+) + 1);
+
+96 
+	`•rötf
+(
+hªq
+->
+d©a
+, 
+f‹m©
+, 
+obj
+->
+«me
+, 
+msg°r
+);
+
+97 
+	`ubus_de„r_ªque°
+(
+˘x
+, 
+ªq
+, &
+hªq
+->req);
+
+98 
+hªq
+->
+timeout
+.
+cb
+ = 
+ã°_hñlo_ª∂y
+;
+
+99 
+	`ulo›_timeout_£t
+(&
+hªq
+->
+timeout
+, 1000);
+
+102 
+	}
+}
+
+105 
+	mWATCH_ID
+,
+
+106 
+	mWATCH_COUNTER
+,
+
+107 
+	m__WATCH_MAX
+
+
+110 c⁄° 
+blobmsg_pﬁicy
+ 
+	gw©ch_pﬁicy
+[
+__WATCH_MAX
+] = {
+
+111 [
+WATCH_ID
+] = { .
+«me
+ = "id", .
+	gty≥
+ = 
+BLOBMSG_TYPE_INT32
+ },
+
+112 [
+WATCH_COUNTER
+] = { .
+«me
+ = "cou¡î", .
+	gty≥
+ = 
+BLOBMSG_TYPE_INT32
+ },
+
+116 
+	$ã°_h™dÀ_ªmove
+(
+ubus_c⁄ãxt
+ *
+˘x
+, 
+ubus_subs¸ibî
+ *
+s
+,
+
+117 
+uöt32_t
+ 
+id
+)
+
+119 
+	`Ârötf
+(
+°dîr
+, "Obje˘ %08x wíàaway\n", 
+id
+);
+
+120 
+	}
+}
+
+123 
+	$ã°_nŸify
+(
+ubus_c⁄ãxt
+ *
+˘x
+, 
+ubus_obje˘
+ *
+obj
+,
+
+124 
+ubus_ªque°_d©a
+ *
+ªq
+, c⁄° *
+mëhod
+,
+
+125 
+blob_©å
+ *
+msg
+)
+
+128 *
+°r
+;
+
+130 
+°r
+ = 
+	`blobmsg_f‹m©_js⁄
+(
+msg
+, 
+åue
+);
+
+131 
+	`Ârötf
+(
+°dîr
+, "Re˚ivedÇŸifiˇti⁄ '%s': %s\n", 
+mëhod
+, 
+°r
+);
+
+132 
+	`‰ì
+(
+°r
+);
+
+136 
+	}
+}
+
+138 
+	$ã°_w©ch
+(
+ubus_c⁄ãxt
+ *
+˘x
+, 
+ubus_obje˘
+ *
+obj
+,
+
+139 
+ubus_ªque°_d©a
+ *
+ªq
+, c⁄° *
+mëhod
+,
+
+140 
+blob_©å
+ *
+msg
+)
+
+142 
+blob_©å
+ *
+tb
+[
+__WATCH_MAX
+];
+
+143 
+ªt
+;
+
+145 
+	`blobmsg_∑r£
+(
+w©ch_pﬁicy
+, 
+__WATCH_MAX
+, 
+tb
+, 
+	`blob_d©a
+(
+msg
+), 
+	`blob_Àn
+(msg));
+
+146 i‡(!
+tb
+[
+WATCH_ID
+])
+
+147  
+UBUS_STATUS_INVALID_ARGUMENT
+;
+
+149 
+ã°_evít
+.
+ªmove_cb
+ = 
+ã°_h™dÀ_ªmove
+;
+
+150 
+ã°_evít
+.
+cb
+ = 
+ã°_nŸify
+;
+
+151 
+ªt
+ = 
+	`ubus_subs¸ibe
+(
+˘x
+, &
+ã°_evít
+, 
+	`blobmsg_gë_u32
+(
+tb
+[
+WATCH_ID
+]));
+
+152 
+	`Ârötf
+(
+°dîr
+, "W©chög obje˘ %08x: %s\n", 
+	`blobmsg_gë_u32
+(
+tb
+[
+WATCH_ID
+]), 
+	`ubus_°ªº‹
+(
+ªt
+));
+
+153  
+ªt
+;
+
+154 
+	}
+}
+
+157 
+	mCOUNT_TO
+,
+
+158 
+	mCOUNT_STRING
+,
+
+159 
+	m__COUNT_MAX
+
+
+162 c⁄° 
+blobmsg_pﬁicy
+ 
+	gcou¡_pﬁicy
+[
+__COUNT_MAX
+] = {
+
+163 [
+COUNT_TO
+] = { .
+«me
+ = "to", .
+	gty≥
+ = 
+BLOBMSG_TYPE_INT32
+ },
+
+164 [
+COUNT_STRING
+] = { .
+«me
+ = "°rög", .
+	gty≥
+ = 
+BLOBMSG_TYPE_STRING
+ },
+
+167 
+	$ã°_cou¡
+(
+ubus_c⁄ãxt
+ *
+˘x
+, 
+ubus_obje˘
+ *
+obj
+,
+
+168 
+ubus_ªque°_d©a
+ *
+ªq
+, c⁄° *
+mëhod
+,
+
+169 
+blob_©å
+ *
+msg
+)
+
+171 
+blob_©å
+ *
+tb
+[
+__COUNT_MAX
+];
+
+172 *
+s1
+, *
+s2
+;
+
+173 
+uöt32_t
+ 
+num
+;
+
+175 
+	`blobmsg_∑r£
+(
+cou¡_pﬁicy
+, 
+__COUNT_MAX
+, 
+tb
+, 
+	`blob_d©a
+(
+msg
+), 
+	`blob_Àn
+(msg));
+
+176 i‡(!
+tb
+[
+COUNT_TO
+] || !tb[
+COUNT_STRING
+])
+
+177  
+UBUS_STATUS_INVALID_ARGUMENT
+;
+
+179 
+num
+ = 
+	`blobmsg_gë_u32
+(
+tb
+[
+COUNT_TO
+]);
+
+180 
+s1
+ = 
+	`blobmsg_gë_°rög
+(
+tb
+[
+COUNT_STRING
+]);
+
+181 
+s2
+ = 
+	`cou¡_to_numbî
+(
+num
+);
+
+182 i‡(!
+s1
+ || !
+s2
+) {
+
+183 
+	`‰ì
+(
+s2
+);
+
+184  
+UBUS_STATUS_UNKNOWN_ERROR
+;
+
+186 
+	`blob_buf_öô
+(&
+b
+, 0);
+
+187 
+	`blobmsg_add_u32
+(&
+b
+, "rc", 
+	`°rcmp
+(
+s1
+, 
+s2
+));
+
+188 
+	`ubus_£nd_ª∂y
+(
+˘x
+, 
+ªq
+, 
+b
+.
+hód
+);
+
+189 
+	`‰ì
+(
+s2
+);
+
+192 
+	}
+}
+
+194 c⁄° 
+ubus_mëhod
+ 
+	gã°_mëhods
+[] = {
+
+195 
+UBUS_METHOD
+("hñlo", 
+ã°_hñlo
+, 
+hñlo_pﬁicy
+),
+
+196 
+UBUS_METHOD
+("w©ch", 
+ã°_w©ch
+, 
+w©ch_pﬁicy
+),
+
+197 
+UBUS_METHOD
+("cou¡", 
+ã°_cou¡
+, 
+cou¡_pﬁicy
+),
+
+200 
+ubus_obje˘_ty≥
+ 
+	gã°_obje˘_ty≥
+ =
+
+201 
+UBUS_OBJECT_TYPE
+("ã°", 
+ã°_mëhods
+);
+
+203 
+ubus_obje˘
+ 
+	gã°_obje˘
+ = {
+
+204 .
+«me
+ = "test",
+
+205 .
+	gty≥
+ = &
+ã°_obje˘_ty≥
+,
+
+206 .
+	gmëhods
+ = 
+ã°_mëhods
+,
+
+207 .
+	gn_mëhods
+ = 
+ARRAY_SIZE
+(
+ã°_mëhods
+),
+
+210 
+	$£rvî_maö
+()
+
+212 
+ªt
+;
+
+214 
+ªt
+ = 
+	`ubus_add_obje˘
+(
+˘x
+, &
+ã°_obje˘
+);
+
+215 i‡(
+ªt
+)
+
+216 
+	`Ârötf
+(
+°dîr
+, "FaûedÅÿadd obje˘: %s\n", 
+	`ubus_°ªº‹
+(
+ªt
+));
+
+218 
+ªt
+ = 
+	`ubus_ªgi°î_subs¸ibî
+(
+˘x
+, &
+ã°_evít
+);
+
+219 i‡(
+ªt
+)
+
+220 
+	`Ârötf
+(
+°dîr
+, "FaûedÅÿadd w©ch h™dÀr: %s\n", 
+	`ubus_°ªº‹
+(
+ªt
+));
+
+222 
+	`ulo›_run
+();
+
+223 
+	}
+}
+
+225 
+	$maö
+(
+¨gc
+, **
+¨gv
+)
+
+227 c⁄° *
+ubus_sockë
+ = 
+NULL
+;
+
+228 
+ch
+;
+
+230 (
+ch
+ = 
+	`gë›t
+(
+¨gc
+, 
+¨gv
+, "cs:")) != -1) {
+
+231 
+ch
+) {
+
+233 
+ubus_sockë
+ = 
+›èrg
+;
+
+240 
+¨gc
+ -
+›töd
+;
+
+241 
+¨gv
+ +
+›töd
+;
+
+243 
+	`ulo›_öô
+();
+
+244 
+	`sig«l
+(
+SIGPIPE
+, 
+SIG_IGN
+);
+
+246 
+˘x
+ = 
+	`ubus_c⁄√˘
+(
+ubus_sockë
+);
+
+247 i‡(!
+˘x
+) {
+
+248 
+	`Ârötf
+(
+°dîr
+, "FailedÅo connectÅo ubus\n");
+
+252 
+	`ubus_add_ulo›
+(
+˘x
+);
+
+254 
+	`£rvî_maö
+();
+
+256 
+	`ubus_‰ì
+(
+˘x
+);
+
+257 
+	`ulo›_d⁄e
+();
+
+260 
+	}
+}
+
+	@
+1
+.
+0
+4
+214
+/home/gaojing/Desktop/study/ubus_example/src/client.c
+/home/gaojing/Desktop/study/ubus_example/src/count.c
+/home/gaojing/Desktop/study/ubus_example/src/count.h
+/home/gaojing/Desktop/study/ubus_example/src/server.c

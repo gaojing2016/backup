@@ -1,0 +1,68 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Build	Makefile	/^define Build\/Compile$/;"	m
+Build	Makefile	/^define Build\/Prepare$/;"	m
+COUNT_STRING	src/server.c	/^    COUNT_STRING,$/;"	e	enum:__anon4	file:
+COUNT_TO	src/server.c	/^    COUNT_TO,$/;"	e	enum:__anon4	file:
+HELLO_ID	src/server.c	/^	HELLO_ID,$/;"	e	enum:__anon2	file:
+HELLO_MSG	src/server.c	/^	HELLO_MSG,$/;"	e	enum:__anon2	file:
+PKG_BUILD_DIR	Makefile	/^PKG_BUILD_DIR:=$(BUILD_DIR)\/$(PKG_NAME)$/;"	m
+PKG_NAME	Makefile	/^PKG_NAME:=ubus_example$/;"	m
+PKG_RELEASE	Makefile	/^PKG_RELEASE:=1$/;"	m
+PKG_VERSION	Makefile	/^PKG_VERSION=1.0$/;"	m
+Package	Makefile	/^define Package\/$(PKG_NAME)\/install$/;"	m
+Package	Makefile	/^define Package\/ubus_example$/;"	m
+Package	Makefile	/^define Package\/ubus_example\/description$/;"	m
+RETURN_CODE	src/client.c	/^	RETURN_CODE,$/;"	e	enum:__anon1	file:
+WATCH_COUNTER	src/server.c	/^	WATCH_COUNTER,$/;"	e	enum:__anon3	file:
+WATCH_ID	src/server.c	/^	WATCH_ID,$/;"	e	enum:__anon3	file:
+__COUNT_H	src/count.h	15;"	d
+__COUNT_MAX	src/server.c	/^    __COUNT_MAX$/;"	e	enum:__anon4	file:
+__HELLO_MAX	src/server.c	/^	__HELLO_MAX$/;"	e	enum:__anon2	file:
+__RETURN_MAX	src/client.c	/^	__RETURN_MAX,$/;"	e	enum:__anon1	file:
+__WATCH_MAX	src/server.c	/^	__WATCH_MAX$/;"	e	enum:__anon3	file:
+b	src/client.c	/^static struct blob_buf b;$/;"	v	typeref:struct:blob_buf	file:
+b	src/server.c	/^static struct blob_buf b;$/;"	v	typeref:struct:blob_buf	file:
+client_main	src/client.c	/^static void client_main(void)$/;"	f	file:	signature:(void)
+count_policy	src/server.c	/^static const struct blobmsg_policy count_policy[__COUNT_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+count_timer	src/client.c	/^static struct uloop_timeout count_timer = {$/;"	v	typeref:struct:uloop_timeout	file:
+count_to_number	src/count.c	/^char *count_to_number(uint32_t num)$/;"	f	signature:(uint32_t num)
+count_to_number	src/count.h	/^char *count_to_number(uint32_t num);$/;"	p	signature:(uint32_t num)
+ctx	src/client.c	/^static struct ubus_context *ctx;$/;"	v	typeref:struct:ubus_context	file:
+ctx	src/server.c	/^static struct ubus_context *ctx;$/;"	v	typeref:struct:ubus_context	file:
+data	src/server.c	/^	char data[];$/;"	m	struct:hello_request	file:
+fd	src/server.c	/^	int fd;$/;"	m	struct:hello_request	file:
+hello_policy	src/server.c	/^static const struct blobmsg_policy hello_policy[] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+hello_request	src/server.c	/^struct hello_request {$/;"	s	file:
+idx	src/server.c	/^	int idx;$/;"	m	struct:hello_request	file:
+main	src/client.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	src/server.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+notify_timer	src/client.c	/^static struct uloop_timeout notify_timer = {$/;"	v	typeref:struct:uloop_timeout	file:
+req	src/server.c	/^	struct ubus_request_data req;$/;"	m	struct:hello_request	typeref:struct:hello_request::ubus_request_data	file:
+return_policy	src/client.c	/^static const struct blobmsg_policy return_policy[__RETURN_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+server_main	src/server.c	/^static void server_main(void)$/;"	f	file:	signature:(void)
+test_client_complete_cb	src/client.c	/^static void test_client_complete_cb(struct ubus_request *req, int ret)$/;"	f	file:	signature:(struct ubus_request *req, int ret)
+test_client_fd_cb	src/client.c	/^static void test_client_fd_cb(struct ubus_request *req, int fd)$/;"	f	file:	signature:(struct ubus_request *req, int fd)
+test_client_fd_data_cb	src/client.c	/^static void test_client_fd_data_cb(struct ustream *s, int bytes)$/;"	f	file:	signature:(struct ustream *s, int bytes)
+test_client_notify_cb	src/client.c	/^static void test_client_notify_cb(struct uloop_timeout *timeout)$/;"	f	file:	signature:(struct uloop_timeout *timeout)
+test_client_object	src/client.c	/^static struct ubus_object test_client_object = {$/;"	v	typeref:struct:ubus_object	file:
+test_client_subscribe_cb	src/client.c	/^static void test_client_subscribe_cb(struct ubus_context *ctx, struct ubus_object *obj)$/;"	f	file:	signature:(struct ubus_context *ctx, struct ubus_object *obj)
+test_count	src/client.c	/^static void test_count(struct uloop_timeout *timeout)$/;"	f	file:	signature:(struct uloop_timeout *timeout)
+test_count	src/server.c	/^static int test_count(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:	signature:(struct ubus_context *ctx, struct ubus_object *obj, struct ubus_request_data *req, const char *method, struct blob_attr *msg)
+test_count_data_cb	src/client.c	/^static void test_count_data_cb(struct ubus_request *req,$/;"	f	file:	signature:(struct ubus_request *req, int type, struct blob_attr *msg)
+test_event	src/server.c	/^static struct ubus_subscriber test_event;$/;"	v	typeref:struct:ubus_subscriber	file:
+test_handle_remove	src/server.c	/^test_handle_remove(struct ubus_context *ctx, struct ubus_subscriber *s,$/;"	f	file:	signature:(struct ubus_context *ctx, struct ubus_subscriber *s, uint32_t id)
+test_hello	src/server.c	/^static int test_hello(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:	signature:(struct ubus_context *ctx, struct ubus_object *obj, struct ubus_request_data *req, const char *method, struct blob_attr *msg)
+test_hello_fd_reply	src/server.c	/^static void test_hello_fd_reply(struct uloop_timeout *t)$/;"	f	file:	signature:(struct uloop_timeout *t)
+test_hello_reply	src/server.c	/^static void test_hello_reply(struct uloop_timeout *t)$/;"	f	file:	signature:(struct uloop_timeout *t)
+test_methods	src/server.c	/^static const struct ubus_method test_methods[] = {$/;"	v	typeref:struct:ubus_method	file:
+test_notify	src/server.c	/^test_notify(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:	signature:(struct ubus_context *ctx, struct ubus_object *obj, struct ubus_request_data *req, const char *method, struct blob_attr *msg)
+test_object	src/server.c	/^static struct ubus_object test_object = {$/;"	v	typeref:struct:ubus_object	file:
+test_object_type	src/server.c	/^static struct ubus_object_type test_object_type =$/;"	v	typeref:struct:ubus_object_type	file:
+test_watch	src/server.c	/^static int test_watch(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:	signature:(struct ubus_context *ctx, struct ubus_object *obj, struct ubus_request_data *req, const char *method, struct blob_attr *msg)
+timeout	src/server.c	/^	struct uloop_timeout timeout;$/;"	m	struct:hello_request	typeref:struct:hello_request::uloop_timeout	file:
+watch_policy	src/server.c	/^static const struct blobmsg_policy watch_policy[__WATCH_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:

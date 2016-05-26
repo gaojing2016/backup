@@ -1,6 +1,4 @@
 
-https://segmentfault.com/a/1190000002391979#articleHeader5
-
 libubus
 数据结构
 
