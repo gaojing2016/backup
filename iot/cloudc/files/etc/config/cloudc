@@ -1,0 +1,9 @@
+config global 'global'
+    option enable '1'
+    option loglevel 'debug'
+    option register_flag '0'
+
+    
+config cloud_server 'cloud_server'
+    option cloud_server_url 'cloud.server'
+    option cloud_server_port '80'

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<node>
+    <led>
+        <feixun>
+            <Flight>
+                <configKey name="devData"></configKey>
+                    <detail name="name"></detail>
+                    <detail name="line1"></detail>
+                    <detail name="line2"></detail>
+                    <detail name="line1Display"></detail>
+                    <detail name="line2Display"></detail>
+            </Flight>
+        </feixun>
+    </led>
+</node>

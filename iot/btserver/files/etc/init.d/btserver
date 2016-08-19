@@ -1,0 +1,33 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+STOP=99
+
+SERVICE_DAEMONIZE=1
+SERVICE_WRITE_PID=1
+
+run_global()
+{
+    local enable
+    config_get_bool enable $1 enable
+    if [ "$enable" -eq "1" ]; then
+        echo $enable
+        btserver& 
+        echo "btserver enabled." >/dev/console  
+    else
+        echo $enable
+        echo "btserver disabled." >/dev/console
+        killall -kill btserver
+    fi  
+}
+
+start() 
+{
+    config_load btserver
+    config_foreach run_global global
+}
+
+stop()
+{
+    echo ...
+}

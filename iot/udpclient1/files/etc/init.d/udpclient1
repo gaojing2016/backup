@@ -1,0 +1,33 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+STOP=99
+
+SERVICE_DAEMONIZE=1
+SERVICE_WRITE_PID=1
+
+run_global()
+{
+    local enable
+    config_get_bool enable $1 enable
+    if [ "$enable" -eq "1" ]; then
+        echo $enable
+        udpclient1& 
+        echo "udpclient1 enabled." >/dev/console  
+    else
+        echo $enable
+        echo "udpclient1 disabled." >/dev/console
+        killall -kill udpclient1
+    fi  
+}
+
+start() 
+{
+    config_load udpclient1
+    config_foreach run_global global
+}
+
+stop()
+{
+    echo ...
+}

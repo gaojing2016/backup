@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<node>
+    <led>
+        <wechat>
+            <power_switch alljoyn="PowerSwitch"></power_switch>
+            <status alljoyn="Status"></status>
+			<color_rgb alljoyn="LightBulbColor"></color_rgb>
+            <operation_status alljoyn="OperationStatus"></operation_status>
+        </wechat>
+        <ali>
+            <power_switch ali="AliPowerSwitch"></power_switch>
+            <operation_status ali="AliOperationStatus"></operation_status>
+        </ali>
+    </led>
+</node>

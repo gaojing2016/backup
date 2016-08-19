@@ -1,0 +1,22 @@
+all:testadapter
+testadapter:OptParser.o ConfigServiceListenerImpl.o \
+	AboutDataStore.o AsyncSessionJoiner.o \
+	AnnounceHandlerImpl.o CommonSampleUtil.o \
+	SrpKeyXListener.o AboutObjApi.o \
+	CommonBusListener.o SessionListenerImpl.o \
+	ConfigServiceMain.o ubus.o
+	$(CXX) $(LDFALGS)  $^ -o $@ -lubus -lubox -lblobmsg_json \
+		-lalljoyn -lalljoyn_about -lalljoyn_config -lalljoyn_controlpanel -lalljoyn_services_common -lalljoyn_notification -lsqlite3 
+
+%.o:%.c
+	$(CC) $(CFALGS) -c $<
+
+%.o:%.cc
+	$(CXX) $(CXXFALGS) -DQCC_OS_GROUP_POSIX -DQCC_OS_LINUX -c $<
+
+%.o:samples_common/%.cc
+	$(CXX) $(CXXFALGS) -I./samples_common -DQCC_OS_GROUP_POSIX -DQCC_OS_LINUX -DNEED_DATA_STORE -g -c $<  
+clean: 
+	rm -rf testadapter
+
+.PHONY: all clean
